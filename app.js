@@ -51,7 +51,7 @@ app.get('/getInvolved', routes.index);
 app.get('/getInvolved/digest', routes.digest);
 app.get('/getInvolved/registration', routes.registration);
 // Media
-app.get('/media', routes.media);
+app.get('/media', routes.index);
 app.get('/media/events', routes.events);
 app.get('/media/inTheNews', routes.inTheNews);
 app.get('/media/brandingGuideLines', routes.brandingGuideLines);
@@ -59,7 +59,7 @@ app.get('/media/brandingGuideLines', routes.brandingGuideLines);
 //Blog
 //No pages here, just direct link
 //Partners
-app.get('/partners', routes.partners);
+app.get('/partners', routes.index);
 app.get('/partners/sponsors', routes.sponsors);
 app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
 // In case of bad routing
