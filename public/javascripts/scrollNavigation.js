@@ -1,12 +1,11 @@
 $(document).ready(function() {
   var destination = window.location.hash;
-  if (destination) {
-    
-  }
+  alert(destination)
+  if (destination) scrollTo(destination);
 });
 
-function scrollTo(id){
-  $('html').animate({
-    scrollTop: $("#" + id).offset().top},
-    'slow');
+function scrollTo(destination){
+  $("html,body").animate({
+    scrollTop: $(destination).offset().top
+    }, "slow");
 }
