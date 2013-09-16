@@ -1,8 +1,20 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  height: 100%;
+  width: 100%;
 }
 
-a {
-  color: #00B7FF;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.fullscreen {
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  min-height: 400px;
+  width: 100%;
 }
