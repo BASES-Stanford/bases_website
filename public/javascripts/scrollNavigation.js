@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 
 function scrollTo(destination){
-  $("html,body").animate({
+  $("body").animate({
     scrollTop: $(destination).offset().top
     }, "slow");
 }
