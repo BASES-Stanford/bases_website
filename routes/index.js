@@ -8,65 +8,65 @@ exports.index = function(req, res){
 };
 
 exports.branding = function(req,res) {
-	res.render('branding');
+	res.render('programs/branding');
 };
 
 exports.basesChallenge = function(req, res) {
-	res.render('basesChallenge');
+	res.render('programs/basesChallenge');
 };
 
 exports.eBootCamp = function(req, res) {
-	res.render('eBootCamp');
+	res.render('programs/eBootCamp');
 }
 exports.etl = function(req, res) {
-	res.render('etl');
+	res.render('programs/etl');
 }
 exports.hackspace = function(req, res) {
-	res.render('hackspace');
+	res.render('programs/hackspace');
 }
 exports.profDev = function (req, res) {
-	res.render('profDev');
+	res.render('programs/profDev');
 }
 exports.core = function (req, res) {
-	res.render('core');
+	res.render('programs/core');
 }
 exports.freshmanBat = function (req, res) {
-	res.render('freshmanBat');
+	res.render('programs/freshmanBat');
 }
 exports.internship = function (req, res) {
-	res.render('internship');
+	res.render('programs/internship');
 }
 exports.pastWinners = function (req, res) {
-	res.render('pastWinners');
+	res.render('history/pastWinners');
 }
 exports.alumni = function (req, res) {
-	res.render ('alumni');
+	res.render ('history/alumni');
 }
 exports.careerFairs = function (req, res) {
-	res.render ('careerFairs');
+	res.render ('getInvolved/careerFairs');
 }
 exports.digest = function (req, res) {
-	res.render ('digest');
+	res.render ('getInvolved/digest');
 }
 exports.registration = function (req, res) {
-	res.render('registration');
+	res.render('getInvolved/registration');
 }
 
 exports.events = function (req, res) {
-	res.render('events');
+	res.render('media/events');
 }
 
 exports.inTheNews = function (req, res) {
-	res.render('inTheNews');
+	res.render('media/inTheNews');
 }
 exports.brandingGuideLines = function (req, res) {
-	res.render('brandingGuideLines');
+	res.render('media/brandingGuideLines');
 }
 
 exports.sponsors = function (req, res) {
-	res.render('sponsors');
+	res.render('partners/sponsors');
 }
 
 exports.boardOfAdvisors = function (req, res) {
-	res.render('boardOfAdvisors');
+	res.render('partners/boardOfAdvisors');
 }

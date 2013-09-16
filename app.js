@@ -34,7 +34,35 @@ app.get('/users', user.list);
 app.get('/programs', routes.index);
 app.get('/programs/branding', routes.branding);
 app.get('/programs/basesChallenge', routes.basesChallenge);
+app.get('/programs/eBootCamp', routes.eBootCamp);
+app.get('/programs/etl', routes.etl);
+app.get('/programs/hackspace', routes.hackspace);
+app.get('/programs/profDev', routes.profDev);
+app.get('/programs/core', routes.core);
+app.get('/programs/freshmanBat', routes.freshmanBat);
+app.get('/programs/internship', routes.internship);
+//History
+app.get('/history', routes.index);
+app.get('/history/pastWinners', routes.pastWinners);
+app.get('/history/alumni', routes.alumni);
+//Get Involved
+app.get('/getInvolved/careerFairs', routes.careerFairs);
+app.get('/getInvolved', routes.index);
+app.get('/getInvolved/digest', routes.digest);
+app.get('/getInvolved/registration', routes.registration);
+// Media
+app.get('/media', routes.media);
+app.get('/media/events', routes.events);
+app.get('/media/inTheNews', routes.inTheNews);
+app.get('/media/brandingGuideLines', routes.brandingGuideLines);
 
+//Blog
+//No pages here, just direct link
+//Partners
+app.get('/partners', routes.partners);
+app.get('/partners/sponsors', routes.sponsors);
+app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
+// In case of bad routing
 app.get('/*', routes.index);
 
 http.createServer(app).listen(app.get('port'), function(){
