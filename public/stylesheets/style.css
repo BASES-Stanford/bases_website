@@ -18,3 +18,12 @@ body {
   min-height: 400px;
   width: 100%;
 }
+
+#home {
+  background-image: url('/images/basesCover.jpg');
+  background-position:center;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+}
