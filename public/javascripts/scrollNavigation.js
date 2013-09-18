@@ -6,8 +6,9 @@ $(document).ready(function() {
 
   $("a").click(function(e) {
     var destination = $(this).attr("href");
-    if (isValidHash(destination)) {
+    if (isValidHash(destination) && window.history) {     // window.history not supported by IE8 
       e.preventDefault();
+      window.history.pushState(null, null, destination);  // Update hash w/o triggering page jump
       scrollTo(destination);
     }
   });
