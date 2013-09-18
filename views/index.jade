@@ -3,17 +3,77 @@ html
 
   head
     title BASES
+    link(rel='stylesheet', href='/libraries/Flat-UI-master/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/libraries/Flat-UI-master/css/flat-ui.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
   body
+
+    div.navbar.navbar-inverse.navbar-fixed-top
+      ul.nav
+        li
+          a(href='#home') Home
+        li
+          a(href='#programs') Programs
+          ul
+            li
+              a(href='programs/basesChallenge') BASES Challenge
+            li
+              a(href='programs/eBootCamp') E-Bootcamp
+            li
+              a(href='programs/etl') ETL
+            li
+              a(href='programs/hackspace') Hackspace
+            li
+              a(href='programs/profDev') Professional Development
+            li
+              a(href='programs/core') Core
+            li
+              a(href='programs/freshmanBat') Freshman Battalion
+            li
+              a(href='programs/internship') Internship
+        li
+          a(href='#history') History
+          ul
+            li
+              a(href='history/pastWinners') Past Winners
+            li
+              a(href='history/alumni') Alumni
+        li
+          a(href='#getInvolved') Get Involved
+          ul
+            li
+              a(href='getInvolved/careerFairs') Career Fairs
+            li
+              a(href='getInvolved/digest') Digest
+            li
+              a(href='getInvolved/registration') Registration
+        li
+          a(href='#media') Media
+          ul
+            li
+              a(href='media/events') Events
+            li
+              a(href='media/inTheNews') In The News
+            li
+              a(href='media/brandingGuidelines') Branding Guidelines
+        li
+          a(href='#blog') Blog
+        li
+          a(href='#partners') Partners
+          ul
+            li
+              a(href='partners/sponsors') Sponsors
+            li
+              a(href='partners/boardOfAdvisors') Board of Advisors
+
     div#home.slide.fullscreen
     div#programs.slide
     div#history.slide
     div#getInvolved.slide
     div#media.slide
     div#blog.slide
-    div#sponsors.slide
     div#partners.slide
 
-    script(type='text/javascript', src='/javascripts/jquery-1.10.2.min.js')
+    script(type='text/javascript', src='/libraries/jquery-1.10.2.min.js')
     script(type='text/javascript', src='/javascripts/scrollNavigation.js')

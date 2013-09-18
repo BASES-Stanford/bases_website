@@ -3,7 +3,7 @@ $(document).ready(function() {
   if (destination) scrollTo(destination);
 });
 
-function scrollTo(destination){
+function scrollTo(destination) {
   $("body").animate({
     scrollTop: $(destination).offset().top
     }, "slow");

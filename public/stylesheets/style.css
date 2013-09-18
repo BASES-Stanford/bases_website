@@ -27,3 +27,7 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
 }
+
+.navbar {
+  border-radius: 0;
+}
