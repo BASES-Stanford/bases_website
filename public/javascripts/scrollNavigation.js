@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   $("a").click(function(e) {
     var destination = $(this).attr("href");
-    if (isValidHash(destination) && window.history) {     // window.history not supported by IE8 
+    if (isValidHash(destination) && window.history) {     // History API not supported by some browsers (e.g. IE8)
       e.preventDefault();
       window.history.pushState(null, null, destination);  // Update hash w/o triggering page jump
       scrollTo(destination);
@@ -16,7 +16,7 @@ $(document).ready(function() {
 });
 
 function scrollTo(destination) {
-  $("body").animate({
+  $("html, body").animate({
     scrollTop: $(destination).offset().top
     }, "slow");
 }
