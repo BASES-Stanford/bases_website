@@ -69,3 +69,8 @@ html, body {
 .navbar .nav > li > a.logo > img {
   height: 50px;
 }
+
+@font-face {
+font-family: bebas_font;
+src: url('/fonts/BEBAS.ttf');
+}

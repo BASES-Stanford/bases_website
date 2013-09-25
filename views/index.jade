@@ -3,9 +3,7 @@ html
 
   head
     title BASES
-    link(rel='stylesheet', href='/libraries/Flat-UI-master/bootstrap/css/bootstrap.css')
-    link(rel='stylesheet', href='/libraries/Flat-UI-master/css/flat-ui.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    include header_files.jade
 
   body
     include navBarMain.jade
@@ -41,5 +39,4 @@ html
       div.arrow-down
       div.slide-content
 
-    script(type='text/javascript', src='/libraries/jquery-1.10.2.min.js')
-    script(type='text/javascript', src='/javascripts/scrollNavigation.js')
+    include footer_files.jade
