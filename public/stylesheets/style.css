@@ -10,8 +10,22 @@ html, body {
 }
 
 .slide {
-  min-height: 400px;
+  min-height: 600px;
   width: 100%;
+}
+
+.slide-header {
+  height: 100px;
+  background-color: #c6280e;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #c6280e;
+  margin: 0 auto;
 }
 
 #home {

@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 function scrollTo(destination) {
   $("html, body").animate({
-    scrollTop: $(destination).offset().top
+    scrollTop: $(destination).offset().top + $(".navbar").height() - $(".slide-header").height()
     }, "slow");
 }
 
