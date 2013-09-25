@@ -23,6 +23,24 @@ html, body {
        -o-background-size: cover;
 }
 
-.navbar {
+.navbar-fixed-top {
+  background-color: #990000;
   border-radius: 0;
+}
+
+.navbar-inverse .nav > li > a {
+  border-color: #860000;
+  color: #eacccc;
+}
+
+.navbar .nav > li:first-child > a {
+  border-radius: 0;
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+  color: #ffffff;
+}
+
+.navbar .nav ul a:hover {
+  background-color: #990000;
 }
