@@ -15,8 +15,8 @@ html, body {
 }
 
 #home {
-  background-image: url('/images/basesCover.jpg');
-  background-position:center;
+  background-image: url('/images/basesCover.png');
+  background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -26,10 +26,13 @@ html, body {
 .navbar-fixed-top {
   background-color: #990000;
   border-radius: 0;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
 }
 
 .navbar-inverse .nav > li > a {
   border-color: #860000;
+  border-bottom: none;
   color: #eacccc;
 }
 
@@ -43,4 +46,12 @@ html, body {
 
 .navbar .nav ul a:hover {
   background-color: #990000;
+}
+
+.navbar .nav > li > a.logo {
+  padding: 0px 20px 0px 0px;
+}
+
+.navbar .nav > li > a.logo > img {
+  height: 50px;
 }
