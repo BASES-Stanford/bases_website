@@ -19,9 +19,14 @@ html, body {
   background-color: #c6280e;
 }
 
+.slide-title {
+  text-align: center;
+  padding: 20px;
+}
+
 .arrow-down {
   width: 0; 
-  height: 0; 
+  height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-top: 30px solid #c6280e;
@@ -54,12 +59,19 @@ html, body {
   border-radius: 0;
 }
 
-.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
   color: #ffffff;
 }
 
 .navbar .nav ul a:hover {
   background-color: #990000;
+}
+
+.navbar-inverse .nav > li.active > a,
+.navbar-inverse .nav > li.active > a:hover,
+.navbar-inverse .nav > li.active > a:focus {
+  background-color: #c6280e;
 }
 
 .navbar .nav > li > a.logo {
