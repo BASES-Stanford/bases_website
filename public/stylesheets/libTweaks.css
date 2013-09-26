@@ -1,0 +1,39 @@
+.navbar-fixed-top {
+  background-color: #990000;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-inverse .nav > li > a {
+  border-color: #860000;
+  border-bottom: none;
+  color: #eacccc;
+}
+
+.navbar .nav > li:first-child > a {
+  border-radius: 0;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+  color: #ffffff;
+}
+
+.navbar .nav ul a:hover {
+  background-color: #990000;
+}
+
+.navbar-inverse .nav > li.active > a,
+.navbar-inverse .nav > li.active > a:hover,
+.navbar-inverse .nav > li.active > a:focus {
+  background-color: #c6280e;
+}
+
+.navbar .nav > li > a.logo {
+  padding: 0px 20px 0px 0px;
+}
+
+.navbar .nav > li > a.logo > img {
+  height: 50px;
+}

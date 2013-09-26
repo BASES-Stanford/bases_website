@@ -36,6 +36,29 @@ html, body {
   border-right: 30px solid transparent;
   border-top: 30px solid #c6280e;
   margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.card {
+  min-height: 400px;
+  margin-bottom: 30px;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #c6280e;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #home {
@@ -45,49 +68,4 @@ html, body {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
-}
-
-.navbar-fixed-top {
-  background-color: #990000;
-  border-radius: 0;
-  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
-}
-
-.navbar-inverse .nav > li > a {
-  border-color: #860000;
-  border-bottom: none;
-  color: #eacccc;
-}
-
-.navbar .nav > li:first-child > a {
-  border-radius: 0;
-}
-
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus {
-  color: #ffffff;
-}
-
-.navbar .nav ul a:hover {
-  background-color: #990000;
-}
-
-.navbar-inverse .nav > li.active > a,
-.navbar-inverse .nav > li.active > a:hover,
-.navbar-inverse .nav > li.active > a:focus {
-  background-color: #c6280e;
-}
-
-.navbar .nav > li > a.logo {
-  padding: 0px 20px 0px 0px;
-}
-
-.navbar .nav > li > a.logo > img {
-  height: 50px;
-}
-
-@font-face {
-font-family: bebas_font;
-src: url('/fonts/BEBAS.ttf');
 }
