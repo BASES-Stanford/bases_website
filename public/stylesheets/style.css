@@ -19,6 +19,32 @@ html, body {
   background-color: #c6280e;
 }
 
+.slide-main {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  font-size:50px;
+  font-weight:bold;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:#000000;
+  text-shadow: black 0.05em 0.05em 0.05em;
+  text-align:center;
+
+}
+
+.line-main {
+  opacity : 0.5;
+  width : 80%;
+  color : #000000;
+}
+
+.slide-main-motto {
+  font-size:25px;
+  text-align: center;
+  color : #F5E6E6 ;
+  text-shadow : ;
+}
+
 .slide-title {
   text-align: center;
   padding: 15px;
@@ -65,6 +91,8 @@ html, body {
   background-image: url('/images/basesCover.png');
   background-position: center;
   background-size: cover;
+
+  padding-top:180px;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
