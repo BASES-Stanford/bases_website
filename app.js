@@ -33,7 +33,9 @@ app.get('/users', user.list);
 //Programs
 app.get('/programs', routes.index);
 app.get('/programs/branding', routes.branding);
-app.get('/programs/basesChallenge', routes.basesChallenge);
+app.get('/programs/eChallenge', routes.eChallenge);
+app.get('/programs/socialEChallenge', routes.socialEChallenge);
+app.get('/programs/productShowCase', routes.productShowCase);
 app.get('/programs/eBootCamp', routes.eBootCamp);
 app.get('/programs/etl', routes.etl);
 app.get('/programs/hackspace', routes.hackspace);

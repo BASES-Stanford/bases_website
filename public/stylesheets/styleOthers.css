@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  color: #666666;
+  background-color: #F7F0F2;
 }
 
 .fullscreen {
@@ -17,9 +17,15 @@ html, body {
 
 .slide-header {
   height: 100px;
-  background-color: #c6280e;
+  background-color: #850312;
+  box-shadow: 3px 3px 3px #999999;
 }
 
+.main-body {
+  background-color: #ffffff;
+  width:100%;
+  height:100%;
+}
 .banner {
   display: inline-block;
   width: 100%;

@@ -11,8 +11,16 @@ exports.branding = function(req,res) {
 	res.render('programs/branding');
 };
 
-exports.basesChallenge = function(req, res) {
-	res.render('programs/basesChallenge');
+exports.eChallenge = function(req, res) {
+	res.render('programs/eChallenge');
+};
+
+exports.socialEChallenge = function(req, res) {
+	res.render('programs/socialEChallenge');
+};
+
+exports.productShowCase = function(req, res) {
+	res.render('programs/productShowCase');
 };
 
 exports.eBootCamp = function(req, res) {
