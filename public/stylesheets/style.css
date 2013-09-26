@@ -60,7 +60,6 @@ html, body {
 
 .slide-description {
   font-size: 30px;
-  color: #999999;
   text-align: center;
 }
 
@@ -105,7 +104,7 @@ hr.divider {
   margin-bottom: 20px;
 }
 
-.card-description {
+.card-content {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
