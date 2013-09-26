@@ -20,26 +20,28 @@ html, body {
   background-color: #c6280e;
 }
 
-.slide-main {
+.banner {
   display: inline-block;
+  width : 100%;
   background: rgba(255, 255, 255, 0.5);
   font-size:50px;
   font-weight:bold;
   padding-top:10px;
   padding-bottom:25px;
   color:#000000;
-  text-shadow: black 0.05em 0.05em 0.05em;
+  width : 100%;
+  text-shadow: #5C5C5C 0.05em 0.05em 0.05em;
   text-align:center;
 
 }
 
-.line-main {
+.line-banner {
   opacity : 0.5;
   width : 80%;
   border-color : #000000;
 }
 
-.slide-main-motto {
+.slide-banner-motto {
   font-size:25px;
   text-align: center;
   font-style : italic;
