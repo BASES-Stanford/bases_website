@@ -22,32 +22,32 @@ html, body {
 
 .banner {
   display: inline-block;
-  width : 100%;
+  width: 100%;
   background: rgba(255, 255, 255, 0.5);
-  font-size:50px;
-  font-weight:bold;
-  padding-top:10px;
-  padding-bottom:25px;
-  color:#000000;
-  width : 100%;
-  text-shadow: #5C5C5C 0.05em 0.05em 0.05em;
-  text-align:center;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  color: #000000;
+  width: 100%;
+  text-shadow: #5c5c5c 0.05em 0.05em 0.05em;
+  text-align: center;
 
 }
 
 .line-banner {
-  opacity : 0.5;
-  width : 80%;
-  border-color : #000000;
+  opacity: 0.5;
+  width: 80%;
+  border-color: #000000;
 }
 
 .slide-banner-motto {
-  font-size:25px;
+  font-size: 25px;
   text-align: center;
-  font-style : italic;
-  color : #000000 ;
-  font-weight : bold;
-  text-shadow : black 0.00em 0.00em 0.00em ;
+  font-style: italic;
+  color: #000000 ;
+  font-weight: bold;
+  text-shadow: black 0.00em 0.00em 0.00em;
 }
 
 .slide-title {
@@ -116,9 +116,8 @@ hr.divider {
   background-image: url('/images/basesCover.png');
   background-position: center;
   background-size: cover;
-
-  padding-top:180px;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
+  padding-top: 180px;
 }
