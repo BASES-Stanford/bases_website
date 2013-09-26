@@ -13,6 +13,7 @@
 
 .navbar .nav > li:first-child > a {
   border-radius: 0;
+  border-left: 2px solid #860000;
 }
 
 .navbar .nav > li > a:hover,
@@ -31,7 +32,7 @@
 }
 
 .navbar .nav > li > a.logo {
-  padding: 0px 20px 0px 0px;
+  padding: 0px 10px 0px 10px;
 }
 
 .navbar .nav > li > a.logo > img {
