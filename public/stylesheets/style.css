@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  color: #666666;
 }
 
 .fullscreen {
@@ -55,6 +56,19 @@ html, body {
   font-size: 50px;
 }
 
+.slide-description {
+  font-size: 30px;
+  color: #999999;
+  text-align: center;
+}
+
+.slide-description-heading {
+  color: #666666;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
 .arrow-down {
   width: 0; 
   height: 0;
@@ -63,6 +77,14 @@ html, body {
   border-top: 30px solid #c6280e;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+hr.divider {
+  background: url('/images/divider.png') 0 0 no-repeat;
+  border: 0;
+  height: 10px;
+  width: 100%;
+  margin: 40px 0px 40px 0px;
 }
 
 .card {
