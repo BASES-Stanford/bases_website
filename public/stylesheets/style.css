@@ -26,7 +26,7 @@ html, body {
   font-size:50px;
   font-weight:bold;
   padding-top:10px;
-  padding-bottom:10px;
+  padding-bottom:25px;
   color:#000000;
   text-shadow: black 0.05em 0.05em 0.05em;
   text-align:center;
@@ -36,14 +36,16 @@ html, body {
 .line-main {
   opacity : 0.5;
   width : 80%;
-  color : #000000;
+  border-color : #000000;
 }
 
 .slide-main-motto {
   font-size:25px;
   text-align: center;
-  color : #F5E6E6 ;
-  text-shadow : ;
+  font-style : italic;
+  color : #000000 ;
+  font-weight : bold;
+  text-shadow : black 0.00em 0.00em 0.00em ;
 }
 
 .slide-title {
