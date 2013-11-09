@@ -26,7 +26,7 @@ html, body {
   display: inline-block;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
-  font-size: 45px;
+  font-size: 2.5vw;
   line-height: 70px;
   padding-top: 10px;
   padding-bottom: 25px;
@@ -37,12 +37,12 @@ html, body {
 
 .line-banner {
   opacity: 0.5;
-  width: 80%;
+  width: 70vw;
   border-color: #000000;
 }
 
 .slide-banner-motto {
-  font-size: 25px;
+  font-size: 1.5vw;
   text-align: center;
   font-style: italic;
   color: #444444;
