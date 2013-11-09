@@ -22,16 +22,16 @@ html, body {
 }
 
 .banner {
+  font-family: "Droid Serif", serif;
   display: inline-block;
   width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  font-size: 50px;
-  font-weight: bold;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 45px;
+  line-height: 70px;
   padding-top: 10px;
   padding-bottom: 25px;
-  color: #000000;
+  color: #333333;
   width: 100%;
-  text-shadow: #5c5c5c 0.05em 0.05em 0.05em;
   text-align: center;
 }
 
@@ -45,9 +45,8 @@ html, body {
   font-size: 25px;
   text-align: center;
   font-style: italic;
-  color: #000000 ;
-  font-weight: bold;
-  text-shadow: black 0.00em 0.00em 0.00em;
+  color: #444444;
+  line-height: 25px;
 }
 
 .slide-title {
@@ -132,6 +131,11 @@ hr.divider {
      -moz-background-size: cover;
        -o-background-size: cover;
   padding-top: 180px;
+}
+
+/*Bootstrap overrides*/
+hr {
+  margin-top: 5px;
 }
 
 .footer {

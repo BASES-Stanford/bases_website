@@ -9,6 +9,8 @@
   border-color: #860000;
   border-bottom: none;
   color: #eacccc;
+  font-family: "Open Sans";
+  font-weight: 400;
 }
 
 .navbar .nav > li:first-child > a {
@@ -37,4 +39,9 @@
 
 .navbar .nav > li > a.navbarLogo > img {
   height: 50px;
+}
+
+.navbar .nav ul a {
+  font-family: "Open Sans";
+  font-weight: 300;
 }
