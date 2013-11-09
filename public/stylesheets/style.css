@@ -11,8 +11,9 @@ html, body {
 }
 
 .slide {
-  min-height: 600px;
+  min-height: 580px;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .slide-header {
@@ -32,7 +33,6 @@ html, body {
   color: #333333;
   width: 100%;
   text-align: center;
-
 }
 
 .line-banner {
@@ -90,25 +90,27 @@ hr.divider {
 }
 
 .card {
-  min-height: 400px;
   margin-bottom: 30px;
-  border: 2px solid #f0f0f0;
-  border-radius: 5px;
   padding: 10px;
 }
 
-.card-title {
+.card-info {
+  min-height: 300px;
+}
+
+.card-info .card-title {
   text-align: center;
   font-weight: bold;
   color: #c6280e;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.card-content {
+.card-info .card-content {
   text-align: center;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
 }
 
 #home {
@@ -136,3 +138,12 @@ hr {
   margin-top: 5px;
 }
 
+.footer {
+  min-height: 200px;
+  background: #333333;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 30px;
+}

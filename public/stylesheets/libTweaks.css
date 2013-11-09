@@ -33,11 +33,11 @@
   background-color: #c6280e;
 }
 
-.navbar .nav > li > a.logo {
+.navbar .nav > li > a.navbarLogo {
   padding: 0px 10px 0px 10px;
 }
 
-.navbar .nav > li > a.logo > img {
+.navbar .nav > li > a.navbarLogo > img {
   height: 50px;
 }
 
