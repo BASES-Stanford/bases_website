@@ -22,11 +22,11 @@ html, body {
 }
 
 .banner {
-  font-family: "Droid Serif", serif;
+  font-family: "Crimson Text", sans-serif;
   display: inline-block;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
-  font-size: 3em;
+  font-size: 3.5em;
   line-height: 1.6em;
   padding-top: 10px;
   padding-bottom: 25px;
