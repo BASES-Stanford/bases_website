@@ -45,3 +45,11 @@
   font-family: "Open Sans";
   font-weight: 300;
 }
+
+.btn-danger {
+  background: #333 !important;
+}
+
+.btn-danger:hover {
+  background: #34495e !important;
+}
