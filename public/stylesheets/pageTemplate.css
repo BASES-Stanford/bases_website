@@ -1,7 +1,17 @@
+body {
+	/*height: 100%;*/
+}
+
 .text {
 	font-family: "Open Sans", sans-serif;
+}
+
+.text p {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 20px;
+	color: #555;
+	line-height: 1.8;
+	padding-bottom: 10px;
 }
 
 h1, h2 {
@@ -10,11 +20,15 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 45px;
+	color: #990000;
+	text-align: right;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 36px; 
+	color: #333;
+	margin-bottom: 10px; 
 }
 
 #cover {
@@ -54,4 +68,17 @@ h2 {
 #heroText img {
 	width: auto;
 	height: 200px;
+}
+
+#content {
+	width: 90%;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.accent {
+	margin-top: 10px !important;
+	border-top: 1px solid #dedede;
 }
