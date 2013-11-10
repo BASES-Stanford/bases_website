@@ -101,7 +101,7 @@ hr.divider {
 .card-info .card-title {
   text-align: center;
   font-weight: bold;
-  color: #c6280e;
+  color: #990000;
   font-size: 30px;
   margin-bottom: 15px;
 }
@@ -148,4 +148,12 @@ hr {
   font-size: 18px;
   padding: 10px;
   font-weight: 300;
+}
+
+.bg1 {
+  background: #F7F0F2;
+}
+
+.bg2 {
+  background: #fff;
 }
