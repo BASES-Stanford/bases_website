@@ -26,6 +26,7 @@ html, body {
   width:100%;
   height:100%;
 }
+
 .banner {
   display: inline-block;
   width: 100%;
@@ -128,12 +129,14 @@ hr.divider {
   padding-top: 180px;
 }
 
-#eChallenge {
-  background-image: url('/images/eChallenge.jpg');
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-  padding-top: 180px;
+.footer {
+  height: 60px;
+  line-height: 35px;
+  background: #34495e;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 300;
 }
