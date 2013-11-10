@@ -35,7 +35,7 @@ h2 {
 	-o-filter: blur(3px);
 	-ms-filter: blur(3px);
 	filter: blur(3px);
-	opacity: 0.8;
+	opacity: 0.85;
 }
 
 #heroText {
@@ -48,6 +48,7 @@ h2 {
 	position: relative;
 	margin: 0 auto;
 	top: -450px;
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 #heroText img {
