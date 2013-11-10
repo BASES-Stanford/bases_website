@@ -18,7 +18,7 @@ html, body {
 
 .slide-header {
   height: 100px;
-  background-color: #c6280e;
+  background-color: #990000;
 }
 
 .banner {
@@ -76,7 +76,7 @@ html, body {
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 30px solid #c6280e;
+  border-top: 30px solid #990000;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -141,7 +141,7 @@ hr {
 .footer {
   height: 60px;
   line-height: 35px;
-  background: #333333;
+  background: #34495e;
   color: #ffffff;
   text-align: center;
   font-weight: bold;
