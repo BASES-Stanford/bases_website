@@ -1,0 +1,56 @@
+.text {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+h1, h2 {
+	font-family: "Crimson Text", serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+#cover {
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+	background: #222;
+}
+
+#hero {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/eChallenge.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.8;
+}
+
+#heroText {
+	font-family: "Bebas-Neue";
+	font-size: 130px;
+	width: 100%;
+	height: 100px;
+	color: #ffffff;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	top: -450px;
+}
+
+#heroText img {
+	width: auto;
+	height: 200px;
+}
