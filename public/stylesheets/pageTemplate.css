@@ -14,7 +14,7 @@ body {
 	padding-bottom: 10px;
 }
 
-li {
+.textList {
 	font-weight: 300;
 	font-size: 20px;
 	color: #555;
