@@ -130,7 +130,6 @@ hr.divider {
 
 .footer {
   height: 60px;
-  width: 100%;
   line-height: 35px;
   background: #34495e;
   color: #ffffff;
@@ -139,7 +138,4 @@ hr.divider {
   font-size: 18px;
   padding: 10px;
   font-weight: 300;
-  position: absolute;
-  bottom: 0 !important;
-  margin-bottom: 0 !important;
 }
