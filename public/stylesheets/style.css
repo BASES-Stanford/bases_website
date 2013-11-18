@@ -63,7 +63,14 @@ html, body {
   font-size: 30px;
   text-align: center;
 }
-
+.slide-description-about {
+  font-size: 25px;
+  text-align: center;
+  color:#666666;
+  font-weight :300;
+  line-height: 1.8;
+  font-family : "Open Sans", sans-serif
+}
 .slide-description-heading {
   color: #666666;
   font-size: 50px;
