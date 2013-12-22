@@ -127,7 +127,28 @@ hr.divider {
        -o-background-size: cover;
   padding-top: 180px;
 }
+#content > .text > p > a {
+  color : #990000;
+}
 
+#content > .text > p > a:hover {
+  color : #BD6F6F;
+}
+.newText p {
+  text-align:center;
+  font-size : 24px;
+}
+.newText a {
+   color : #990000;
+}
+.newText a:hover {
+   color : #BD6F6F;
+}
+#content > .text > .heading > p {
+  font-size : 24px;
+  color : #990000;
+  font-weight: bold;
+}
 #content > h1 > a {
   color : #990000;
 }
@@ -139,6 +160,9 @@ hr.divider {
 }
 .images {
   display: table-cell; vertical-align: middle 
+}
+.platinum {
+  text-align : center
 }
 .footer {
   height: 60px;
