@@ -73,6 +73,35 @@ h2 {
 	opacity: 0.85;
 }
 
+
+#heroetl {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/etl.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+ 
+#herofreshmanBat {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/freshmanBat.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
 #heroPastWinners {
 	width: 100%;
 	height: 650px;
