@@ -127,7 +127,7 @@ hr.divider {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
-  padding-top: 180px;
+  padding-top: 150px;
 }
 
 #eChallenge {
@@ -157,10 +157,38 @@ hr {
   font-weight: 300;
 }
 
+.mainScreen {
+  width : 50%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.2;
+  background: rgba(0,0,0,0.6) !important;
+}
+
 .bg1 {
   background: #F7F0F2;
 }
 
 .bg2 {
   background: #fff;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  width: 50%;
+  display: block;
+  margin-top: 100px;
 }
