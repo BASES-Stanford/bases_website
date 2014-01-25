@@ -71,6 +71,15 @@ html, body {
   line-height: 1.8;
   font-family : "Open Sans", sans-serif
 }
+
+.slide-description-announcement {
+  font-size: 20px;
+  text-align: center;
+  color:#B3B3B3;
+  font-weight :300;
+  line-height: 1.8;
+  font-family : "Open Sans", sans-serif
+}
 .slide-description-heading {
   color: #666666;
   font-size: 50px;
