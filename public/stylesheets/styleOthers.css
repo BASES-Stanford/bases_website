@@ -155,6 +155,12 @@ hr.divider {
 #content > h1 > a:hover {
   color : #BD6F6F;
 }
+a {
+  color : #990000;
+}
+a:hover {
+  color : #BD6F6F;
+}
 #sponsors {
   background-color : #ffffff;
 }
