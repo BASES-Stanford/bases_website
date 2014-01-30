@@ -23,6 +23,9 @@ exports.productShowCase = function(req, res) {
 	res.render('programs/productShowCase');
 };
 
+exports.internal = function(req, res) {
+	res.redirect('https://sites.google.com/site/baseshome/');
+}
 exports.eBootCamp = function(req, res) {
 	res.render('programs/eBootCamp');
 }

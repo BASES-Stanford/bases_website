@@ -63,6 +63,7 @@ app.get('/media/brandingGuideLines', routes.brandingGuideLines);
 app.get('/e-bootcamp', routes.eBootCamp);
 //Blog
 //No pages here, just direct link
+app.get('/internal', routes.internal);
 //Partners
 app.get('/partners', routes.index);
 app.get('/partners/sponsors', routes.sponsors);
