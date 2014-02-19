@@ -63,6 +63,10 @@ exports.registration = function (req, res) {
 	res.render('getInvolved/registration');
 }
 
+exports.blog = function(req, res) {
+	res.redirect('http://stanfordbases.wordpress.com/')
+}
+
 exports.events = function (req, res) {
 	res.render('media/events');
 }
