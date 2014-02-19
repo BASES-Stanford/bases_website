@@ -64,7 +64,7 @@ exports.registration = function (req, res) {
 }
 
 exports.blog = function(req, res) {
-	res.redirect('http://stanfordbases.wordpress.com/')
+	res.redirect('http://stanfordbases.wordpress.com/');
 }
 
 exports.events = function (req, res) {
