@@ -201,3 +201,9 @@ hr {
   display: block;
   margin-top: 100px;
 }
+
+.center {
+  overflow: hidden;
+  margin-left: auto ;
+  margin-right: auto ;
+}
