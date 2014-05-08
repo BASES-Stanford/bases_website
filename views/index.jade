@@ -8,16 +8,21 @@ html
   body
     include navBarMain.jade
     div#home.slide.fullscreen
+      .banner.notice Applications for the BASES 2014-15 team open Thursday May 8th at 11:59 PM
+        .slide-banner-motto Check back here for the link
       div.banner Business Association of Stanford Entrepreneurial Students
         hr.line-banner
         div.slide-banner-motto Empowering the next generation of Stanford entrepreneurs and beyond
       
       //-div.block.center
        //- <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to Product Showcase 2013-14 </a>
-      div.block.left
+      .block.left
         <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to Product Showcase 2013-14 </a>
-
-      div.block.right
+      //
+        .col-md-4
+          .block
+            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to join BASES </a>
+      .block.right
         <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/eBootCamp#publicEvents"> Attend E-Bootcamp Events </a>
       <div class = "clear"></div>
     div#about.slide.bg1
