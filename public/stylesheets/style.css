@@ -34,6 +34,11 @@ html, body {
   width: 100%;
   text-align: center;
 }
+.banner.notice{
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
 
 .line-banner {
   opacity: 0.5;
@@ -136,7 +141,7 @@ hr.divider {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 #eChallenge {
