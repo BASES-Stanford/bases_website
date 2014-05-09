@@ -6,6 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , hackspace = require("./routes/hackspace")
   , http = require('http')
   , path = require('path'),
   rootPath  = path.normalize(__dirname);
@@ -42,6 +43,8 @@ app.get('/programs/productShowCase', routes.productShowCase);
 app.get('/programs/eBootCamp', routes.eBootCamp);
 app.get('/programs/etl', routes.etl);
 app.get('/programs/hackspace', routes.hackspace);
+app.get("/programs/hackspace/workshops", hackspace.workshops);
+app.get("/programs/hackspace/workshops/1", hackspace.websiteWorkshop);
 app.get('/programs/profDev', routes.profDev);
 app.get('/programs/core', routes.core);
 app.get('/programs/freshmanBat', routes.freshmanBat);
