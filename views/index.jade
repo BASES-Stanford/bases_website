@@ -8,23 +8,19 @@ html
   body
     include navBarMain.jade
     div#home.slide.fullscreen
-      .banner.notice Applications for the BASES 2014-15 team open Thursday May 8th at 11:59 PM
-        .slide-banner-motto Check back here for the link
       div.banner Business Association of Stanford Entrepreneurial Students
         hr.line-banner
         div.slide-banner-motto Empowering the next generation of Stanford entrepreneurs and beyond
       
-      //-div.block.center
-       //- <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to Product Showcase 2013-14 </a>
-      .block.left
-        <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to Product Showcase 2013-14 </a>
-      //
-        .col-md-4
-          .block
-            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to join BASES </a>
-      .block.right
-        <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/eBootCamp#publicEvents"> Attend E-Bootcamp Events </a>
-      <div class = "clear"></div>
+      .block
+        .row
+          .col-md-4
+            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/productShowcase"> Apply to Product Showcase 2013-14 </a>
+          .col-md-4
+            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "https://docs.google.com/a/stanford.edu/forms/d/146IUkgwa06AwZ295lKPjKIxV0q7Ix_U3fUK4ZGRBgl4/viewform"> Apply to join BASES</a>
+          .col-md-4
+            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "/programs/eBootCamp#publicEvents"> Attend E-Bootcamp Events </a>
+
     div#about.slide.bg1
       div.slide-header
         div.slide-title - About -
@@ -139,9 +135,12 @@ html
               div.card
                 div.card-info
                   div.card-title Registration
-                  div.card-content Thank you for your interest in BASES, the premier business and entrepreneurship student group of Silicon Valley. We typically open applications for membership in the late spring and early fall of each school year. Please email the presidents with any questions.
+                  //
+                    div.card-content Thank you for your interest in BASES, the premier business and entrepreneurship student group of Silicon Valley. We typically open applications for membership in the late spring and early fall of each school year. Please email the presidents with any questions.
+                  .card-content Thank you for your interest in BASES, the premier business and entrepreneurship student group of Silicon Valley.  We are currently accepting applications for the BASES 2014-15 team. Please click the link below to apply. Note that the application is due by Friday May 16th at 11:59 PM.
+
                 div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "#"> Registration </a>
+                  <a class = "btn btn-block btn-danger" role = "button" href = "https://docs.google.com/a/stanford.edu/forms/d/146IUkgwa06AwZ295lKPjKIxV0q7Ix_U3fUK4ZGRBgl4/viewform"> Registration </a>
 
     div#media.slide.bg1
       div.slide-header
