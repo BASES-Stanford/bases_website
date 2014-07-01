@@ -14,7 +14,7 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 80);
+  app.set('port', 3000); //process.env.PORT || 80);
   app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -40,7 +40,6 @@ app.get('/programs/branding', routes.branding);
 app.get('/programs/eChallenge', routes.eChallenge);
 app.get('/programs/socialEChallenge', routes.socialEChallenge);
 app.get('/programs/productShowCase', routes.productShowCase);
-app.get('/programs/eBootCamp', routes.eBootCamp);
 app.get('/programs/etl', routes.etl);
 app.get('/programs/hackspace', routes.hackspace);
 app.get("/programs/hackspace/workshops", hackspace.workshops);
@@ -53,6 +52,7 @@ app.get('/programs/internship', routes.internship);
 app.get('/history', routes.index);
 app.get('/history/pastWinners', routes.pastWinners);
 app.get('/history/alumni', routes.alumni);
+app.get('/history/eBootCamp', routes.eBootCamp);
 //Get Involved
 app.get('/getInvolved/careerFairs', routes.careerFairs);
 app.get('/getInvolved', routes.index);
