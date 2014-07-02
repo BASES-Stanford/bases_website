@@ -27,7 +27,7 @@ exports.internal = function(req, res) {
 	res.redirect('https://sites.google.com/site/baseshome/');
 }
 exports.eBootCamp = function(req, res) {
-	res.render('programs/eBootCamp');
+	res.render('history/eBootCamp');
 }
 exports.etl = function(req, res) {
 	res.render('programs/etl');
