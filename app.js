@@ -72,6 +72,8 @@ app.get('/internal', routes.internal);
 app.get('/partners', routes.index);
 app.get('/partners/sponsors', routes.sponsors);
 app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
+//E-Guide
+app.get('/eGuide', routes.eGuide);
 // In case of bad routing
 //app.get('/*', routes.index);
 

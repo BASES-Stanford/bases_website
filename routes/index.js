@@ -67,6 +67,10 @@ exports.blog = function(req, res) {
 	res.redirect('http://stanfordbases.wordpress.com/');
 }
 
+exports.eGuide = function(req, res) {
+	res.redirect('https://github.com/BASES-Stanford/BASES_E-Guide');
+}
+
 exports.events = function (req, res) {
 	res.render('media/events');
 }
