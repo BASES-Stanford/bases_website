@@ -197,6 +197,35 @@ h2 {
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+#heroEGuide {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/eguide.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
+#heroEGuideClasses {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/lecturehall.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
+
 #heroText img {
 	width: auto;
 	height: 200px;
@@ -209,6 +238,14 @@ h2 {
 	margin: 0 auto;
 	margin-top: 30px;
   margin-bottom: 10px;
+}
+
+#eguidecontents {
+	font-size: 30px;
+}
+
+#eguidelink {
+	font-size: 18px;
 }
 
 .accent {

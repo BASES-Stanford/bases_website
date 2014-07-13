@@ -67,10 +67,6 @@ exports.blog = function(req, res) {
 	res.redirect('http://stanfordbases.wordpress.com/');
 }
 
-exports.eGuide = function(req, res) {
-	res.redirect('https://github.com/BASES-Stanford/BASES_E-Guide');
-}
-
 exports.events = function (req, res) {
 	res.render('media/events');
 }
@@ -88,4 +84,17 @@ exports.sponsors = function (req, res) {
 
 exports.boardOfAdvisors = function (req, res) {
 	res.render('partners/boardOfAdvisors');
+}
+
+exports.eGuide = function(req, res) {
+	//res.render('eguide/home');
+	res.redirect('https://github.com/BASES-Stanford/BASES_E-Guide');
+}
+
+exports.eGuidePrivate = function(req, res) {
+	res.render('eguide/home');
+}
+
+exports.eGuide_Classes = function(req, res) {
+	res.render('eguide/classes')
 }

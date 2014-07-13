@@ -1,0 +1,26 @@
+doctype 5
+html
+
+  head
+    title BASES | E-Guide
+    include ../headerFilesOthers.jade
+
+  body
+    include ../navBarOthers.jade
+    div#cover
+      div#heroEGuide
+      div#heroText E-Guide
+    div#content 
+      h1 Welcome
+      hr.accent
+      div.text 
+       p [Insert inspirational welcome message here]     
+      h1 Contents
+      hr.accent
+      div.text
+        a#eguidecontents(href='/eGuide_Classes') Classes
+        p Groups (in progress)
+        p Labs (in progress)
+        p Startup Resources (in progress)
+        a#eguidecontents(href='https://github.com/BASES-Stanford/BASES_E-Guide') Contribute to the E-Guide
+    include ../footerFilesOthers.jade   
