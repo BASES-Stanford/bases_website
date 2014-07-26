@@ -98,3 +98,7 @@ exports.eGuidePrivate = function(req, res) {
 exports.eGuide_Classes = function(req, res) {
 	res.render('eguide/classes')
 }
+
+exports.eGuide_Groups = function(req, res) {
+	res.render('eguide/groups')
+}

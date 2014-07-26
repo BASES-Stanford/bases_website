@@ -5,7 +5,6 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , hackspace = require("./routes/hackspace")
   , http = require('http')
   , path = require('path'),
@@ -31,7 +30,6 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 
 //Programs
 app.get('/challenge', routes.index);
@@ -76,6 +74,7 @@ app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
 app.get('/eGuide', routes.eGuide);
 app.get('/eGuidePrivate', routes.eGuidePrivate);
 app.get('/eGuide_Classes', routes.eGuide_Classes);
+app.get('/eGuide_Groups', routes.eGuide_Groups);
 // In case of bad routing
 //app.get('/*', routes.index);
 
