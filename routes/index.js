@@ -95,10 +95,14 @@ exports.eGuidePrivate = function(req, res) {
 	res.render('eguide/home');
 }
 
-exports.eGuide_Classes = function(req, res) {
+exports.eGuideClasses = function(req, res) {
 	res.render('eguide/classes')
 }
 
-exports.eGuide_Groups = function(req, res) {
+exports.eGuideGroups = function(req, res) {
 	res.render('eguide/groups')
+}
+
+exports.eGuideResources = function(req, res) {
+	res.render('eguide/resources')
 }
