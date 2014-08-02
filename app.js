@@ -76,6 +76,7 @@ app.get('/eGuidePrivate', routes.eGuidePrivate);
 app.get('/eGuideClasses', routes.eGuideClasses);
 app.get('/eGuideGroups', routes.eGuideGroups);
 app.get('/eGuideResources', routes.eGuideResources);
+app.get('/eGuideLabs', routes.eGuideLabs);
 // In case of bad routing
 //app.get('/*', routes.index);
 

@@ -106,3 +106,7 @@ exports.eGuideGroups = function(req, res) {
 exports.eGuideResources = function(req, res) {
 	res.render('eguide/resources')
 }
+
+exports.eGuideLabs = function(req, res) {
+	res.render('eguide/labs')
+}
