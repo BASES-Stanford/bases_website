@@ -203,7 +203,7 @@ h2 {
 #heroEGuide {
 	width: 100%;
 	height: 650px;
-	background-image: url('/images/eguide.jpg');
+	background-image: url('/images/eguidehome.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	-webkit-filter: blur(3px);
@@ -217,7 +217,7 @@ h2 {
 #heroEGuideClasses {
 	width: 100%;
 	height: 650px;
-	background-image: url('/images/lecturehall.jpg');
+	background-image: url('/images/eguideclasses.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	-webkit-filter: blur(3px);
@@ -228,6 +228,47 @@ h2 {
 	opacity: 0.85;
 }
 
+#heroEGuideGroups {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/eguidegroups.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
+#heroEGuideResources {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/eguideresources.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
+#heroEGuideLabs{
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/eguidelabs.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
 
 #heroText img {
 	width: auto;
