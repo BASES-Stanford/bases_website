@@ -300,3 +300,10 @@ h2 {
 .hackspace a.btn, .hackspace a.btn:hover{
   color: #FFFFFF !important;
 }
+
+a.anchor{
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
+}
