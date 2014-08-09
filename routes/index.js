@@ -1,10 +1,9 @@
-
 /*
  * GET home page.
  */
 
 exports.index = function(req, res){
-  res.render('index');
+	res.render('index');
 };
 
 exports.branding = function(req,res) {
@@ -87,8 +86,7 @@ exports.boardOfAdvisors = function (req, res) {
 }
 
 exports.eGuide = function(req, res) {
-	//res.render('eguide/home');
-	res.redirect('https://github.com/BASES-Stanford/BASES_E-Guide');
+	res.render('eguide/home');
 }
 
 exports.eGuidePrivate = function(req, res) {
