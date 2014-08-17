@@ -46,30 +46,39 @@ app.get('/programs/profDev', routes.profDev);
 app.get('/programs/core', routes.core);
 app.get('/programs/freshmanBat', routes.freshmanBat);
 app.get('/programs/internship', routes.internship);
+
 //History
 app.get('/history', routes.index);
 app.get('/history/pastWinners', routes.pastWinners);
 app.get('/history/alumni', routes.alumni);
 app.get('/history/eBootCamp', routes.eBootCamp);
+
 //Get Involved
-app.get('/getInvolved/careerFairs', routes.careerFairs);
 app.get('/getInvolved', routes.index);
+app.get('/getInvolved/careerFairs', routes.careerFairs);
 app.get('/getInvolved/digest', routes.digest);
 app.get('/getInvolved/registration', routes.registration);
+app.get('/getInvolved/startupLunch', routes.startupLunch);
+
 // Media
 app.get('/media', routes.index);
 app.get('/media/events', routes.events);
 app.get('/media/inTheNews', routes.inTheNews);
 app.get('/media/brandingGuideLines', routes.brandingGuideLines);
 app.get('/e-bootcamp', routes.eBootCamp);
+
 //Blog
 app.get('/blog', routes.blog);
+
+//Internal
 //No pages here, just direct link
 app.get('/internal', routes.internal);
+
 //Partners
 app.get('/partners', routes.index);
 app.get('/partners/sponsors', routes.sponsors);
 app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
+
 //E-Guide
 app.get('/eGuide', routes.eGuide);
 app.get('/eGuidePrivate', routes.eGuidePrivate);
@@ -77,6 +86,7 @@ app.get('/eGuideClasses', routes.eGuideClasses);
 app.get('/eGuideGroups', routes.eGuideGroups);
 app.get('/eGuideResources', routes.eGuideResources);
 app.get('/eGuideLabs', routes.eGuideLabs);
+
 // In case of bad routing
 //app.get('/*', routes.index);
 
