@@ -86,6 +86,7 @@ app.get('/eGuideClasses', routes.eGuideClasses);
 app.get('/eGuideGroups', routes.eGuideGroups);
 app.get('/eGuideResources', routes.eGuideResources);
 app.get('/eGuideLabs', routes.eGuideLabs);
+app.get('/eGuideExternalResources', routes.eGuideExternalResources);
 
 // In case of bad routing
 //app.get('/*', routes.index);

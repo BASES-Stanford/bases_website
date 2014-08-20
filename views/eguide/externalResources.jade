@@ -1,0 +1,34 @@
+doctype 5
+html
+
+  head
+    title BASES | E-Guide &middot Startup Resources
+    include ../headerFilesOthers.jade
+
+  body
+    include ../navBarOthers.jade
+    div#cover
+      div#heroEGuideResources
+      div#heroText External Resources
+    div#content 
+
+    div.container#eguidecontents
+      h3 Table of Contents
+      hr.accent
+      ul
+        li: a#eguidelink(href='#acowan') Alexander Cowan
+
+    br
+    div.container
+
+      h5 <a class="anchor" id="acowan"></a>Alexander Cowan
+        div.text 
+          p  
+            | [insert blurb here]
+          p  
+            | Links: 
+            a#eguidelink(href='http://www.alexandercowan.com/venture-design/') http://www.alexandercowan.com/venture-design
+            a#eguidelink(href='http://www.alexandercowan.com/learn/online-workshops/') http://www.alexandercowan.com/learn/online-workshops
+      hr.accent
+
+    include ../footerFilesOthers.jade
