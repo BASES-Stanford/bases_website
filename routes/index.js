@@ -118,8 +118,8 @@ exports.eGuideGroups = function(req, res) {
 	res.render('eguide/groups')
 };
 
-exports.eGuideResources = function(req, res) {
-	res.render('eguide/resources')
+exports.eGuideCampusResources = function(req, res) {
+	res.render('eguide/campusResources')
 };
 
 exports.eGuideLabs = function(req, res) {
