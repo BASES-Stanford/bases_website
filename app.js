@@ -35,6 +35,7 @@ app.get('/', routes.index);
 app.get('/challenge', routes.index);
 app.get('/programs', routes.index);
 app.get('/programs/branding', routes.branding);
+app.get('/programs/challenge', routes.challenge);
 app.get('/programs/eChallenge', routes.eChallenge);
 app.get('/programs/socialEChallenge', routes.socialEChallenge);
 app.get('/programs/productShowCase', routes.productShowCase);

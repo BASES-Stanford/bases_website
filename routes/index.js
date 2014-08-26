@@ -10,6 +10,10 @@ exports.branding = function(req,res) {
 	res.render('programs/branding');
 };
 
+exports.challenge = function(req, res) {
+	res.render('programs/challenge');
+};
+
 exports.eChallenge = function(req, res) {
 	res.render('programs/eChallenge');
 };
