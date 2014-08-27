@@ -74,6 +74,10 @@ exports.startupLunch = function (req, res) {
 	res.render ('getInvolved/startupLunch');
 };
 
+exports.lessonsInLife = function(req, res) {
+	res.render('getInvolved/lessonsInLife');
+};
+
 exports.digest = function (req, res) {
 	res.render ('getInvolved/digest');
 };
