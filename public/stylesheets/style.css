@@ -114,6 +114,31 @@ hr.divider {
   min-height: 300px;
 }
 
+.card-new-noclick {
+  min-height: 300px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new {
+  margin-bottom: 30px;
+  padding: 10px;
+  min-height: 300px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new:hover {
+  cursor: pointer;
+  background-color: #ff9; 
+}
+
 .card-info .card-title {
   text-align: center;
   font-weight: bold;
@@ -128,6 +153,22 @@ hr.divider {
   font-weight: 300;
   line-height: 1.5;
 }
+
+.card-new .card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #990000;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card-new .card-content {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 
 #home {
   background-image: url('/images/basesCover.png');

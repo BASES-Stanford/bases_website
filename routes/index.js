@@ -119,21 +119,29 @@ exports.eGuidePrivate = function(req, res) {
 };
 
 exports.eGuideClasses = function(req, res) {
-	res.render('eguide/classes')
+	res.render('eguide/classes');
 };
 
 exports.eGuideGroups = function(req, res) {
-	res.render('eguide/groups')
+	res.render('eguide/groups');
 };
 
 exports.eGuideCampusResources = function(req, res) {
-	res.render('eguide/campusResources')
+	res.render('eguide/campusResources');
 };
 
 exports.eGuideLabs = function(req, res) {
-	res.render('eguide/labs')
+	res.render('eguide/labs');
 };
 
 exports.eGuideExternalResources = function(req, res) {
-	res.render('eguide/externalResources')
+	res.render('eguide/externalResources');
 };
+
+exports.stagingHomepage = function(req, res) {
+	res.render('staging/homepage');
+}
+
+exports.stagingEtl = function(req, res) {
+	res.render('staging/etl');
+}
