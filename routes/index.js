@@ -141,7 +141,3 @@ exports.eGuideExternalResources = function(req, res) {
 exports.stagingHomepage = function(req, res) {
 	res.render('staging/homepage');
 }
-
-exports.stagingEtl = function(req, res) {
-	res.render('staging/etl');
-}

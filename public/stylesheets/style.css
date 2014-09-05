@@ -134,7 +134,18 @@ hr.divider {
   border-color: #555;
 }
 
-.card-new-short {
+.card-new-large {
+  margin-bottom: 30px;
+  padding: 10px;
+  min-height: 300px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new-partners {
   margin-bottom: 30px;
   padding: 10px;
   min-height: 150px;
@@ -147,7 +158,10 @@ hr.divider {
 
 .card-new:hover {
   cursor: pointer;
-  background-color: #ff9; 
+}
+
+.card-new:hover .card-title{
+  color: #555;
 }
 
 .card-info .card-title {
