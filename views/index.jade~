@@ -23,7 +23,7 @@ html
       .block
         .row
       div.banner
-        div.slide-banner-motto RSVP for the Oct 25 BASES Alumni Tailgate <a href='https://docs.google.com/a/stanford.edu/forms/d/1eHz9PgBLTsMqWBTuGdADOU7esFKvRZ-Ivn0KT87tSRc/viewform?c=0&w=1&usp=mail_form_link' target="_blank">here</a>.
+        div.slide-banner-motto RSVP for the Oct 25 BASES Alumni Tailgate <a href='https://docs.google.com/a/stanford.edu/forms/d/1eHz9PgBLTsMqWBTuGdADOU7esFKvRZ-Ivn0KT87tSRc/viewform?c=0&w=1&usp=mail_form_link'>here</a>.
       .block
         .row
     div#about.slide.bg1
