@@ -61,6 +61,7 @@ app.get('/getInvolved/digest', routes.digest);
 app.get('/getInvolved/registration', routes.registration);
 app.get('/getInvolved/startupLunch', routes.startupLunch);
 app.get('/getInvolved/lessonsInLife', routes.lessonsInLife);
+app.get('/getInvolved/friends', routes.friends);
 
 // Media
 app.get('/media', routes.index);

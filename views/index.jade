@@ -106,18 +106,23 @@ html
                   div.card-title Lessons in Life
                   div.card-content The BASES Lessons in Life Series provides opportunities for students to engage meaningfully with alumni, entrepreneurs, professors, and leaders in our community over an intimate meal.
           div.row
-            div.col-md-6
+            div.col-md-4
                 div.card-new#digest
                   div.card-title Digest
                   div.card-content The BASES Digest is your weekly email digest summing up the best events happening in and around the Stanford entrepreneurship community. The Digest reaches thousands of subscribers across the Silicon Valley and around the world.
                   div.card-content <b>Click to subscribe to the BASES mailing list, or email us at digest.bases@gmail.com.</b>
                   
-            div.col-md-6
+            div.col-md-4
               div.card-new-noclick
                 div.card-info
                   div.card-title Registration
-                  div.card-content BASES currently has two open officer positions for the fall 2014 recruitment season: the Special Projects Officer and the Content Officer. The application is available <a href='https://docs.google.com/a/stanford.edu/forms/d/16MXAiU020tZRGpFo9UMSlJkm7eIvhLj_PgZoDijeuR8/viewform?edit_requested=true'>here</a>.  Applications are due on October 11 at 11:59PM.
+                  div.card-content BASES typically holds recruitment in the fall and spring of each academic year. Although BASES is currently not accepting new applications for officer positions, consider BASES Friends as an alternate mode of participating in Stanford's premier entrepreneurship organization.
 
+            div.col-md-4
+              div.card-new#friends
+                div.card-info
+                  div.card-title Friends
+                  div.card-content Interested in staying up to date with BASES events and relevant entrepreneurial activities on campus? Get involved by becoming a BASES Friend!
     div#media.slide.bg1
       div.slide-header
         div.slide-title - Media -
@@ -204,6 +209,10 @@ html
         $("#lessonsInLife").click(function(){
           console.log('button clicked!');
           document.location.href='/getInvolved/lessonsInLife';
+        });
+        $("#friends").click(function(){
+          console.log('button clicked!');
+          document.location.href='/getInvolved/friends';
         });
         $("#digest").click(function(){
           console.log('button clicked!');

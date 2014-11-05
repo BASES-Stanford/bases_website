@@ -214,6 +214,21 @@ h2 {
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+#heroFriends {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/friends.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
+
 #heroEGuide {
 	width: 100%;
 	height: 650px;
