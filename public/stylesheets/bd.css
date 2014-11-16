@@ -1,0 +1,59 @@
+#content {
+  width: 936px;
+}
+
+.sponsorTiles {
+  margin-bottom: 50px;
+}
+
+.goldTile {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 6px;
+  box-shadow: 1px 1px 1px #bbb;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.goldTile:hover {
+  background: #e0eeee;
+  cursor: pointer;
+}
+
+.silverTile {
+  height: 225px;
+  width: 225px;
+  display: inline-block;
+  margin: 4px;
+  box-shadow: 1px 1px 1px #bbb;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.silverTile:hover {
+  background: #e0eeee;
+  cursor: pointer;
+}
+
+.goldTile img {
+  width: 240px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+}
+
+#db {
+  width: 100px;
+}
+
+.silverTile img {
+  width: 180px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+}

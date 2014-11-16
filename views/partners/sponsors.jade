@@ -4,56 +4,79 @@ html
   head
     title BASES | Sponsors
     include ../headerFilesOthers.jade
-
+    link(rel="stylesheet", href="/stylesheets/bd.css")
   body
     include ../navBarOthers.jade
     div#sponsors
       div#cover
-        div#hero 
+        div#hero
         div#heroText SPONSORS
-      div#content 
-        
-        h1 Gold Sponsors
-        hr.accent
-        div.text
-         div.platinum
-          p <a href = 'http://www.sequoiacap.com/'><img src = '/images/sequoia2.png' style = "padding-right: 10px" height = 30px></a> <a href = 'http://www.morgenthaler.com/'><img src = '/images/morgenthaler.png' style = "padding-right: 10px" height = 53px></a> <a href = 'http://www.perkinscoie.com/'><img src = '/images/perkinscoie.jpg' style = "padding-right: 10px" height = 53px></a>
-          p <a href = 'http://www.lightspeedvp.com/'><img src = '/images/lsvp.png' style = "padding-right: 10px"> </a> <a href = "http://www.wilmerhale.com/"> <img src = '/images/wh-logo.png' style = "padding-right: 10px"> </a> <a href = "http://www.founder.org/"> <img src = '/images/founderLogo.png' style = "padding-right: 10px" height = 47px> </a> <a href = "http://www.accenture.com/"> <img src = '/images/accentureLogo.png' style = "padding-right: 10px" height = 47px> </a>
+      div#content
+        div.sponsorTiles
+          h1 Gold Sponsors
+          hr.accent
+          a(href='http://www.sequoiacap.com/')
+            div.goldTile
+              img(src='/images/logo/sequoia.png')
+          a(href='http://www.lightspeedvp.com/')
+            div.goldTile
+              img(src='/images/logo/lightspeed.png')
+          a(href='http://www.wilmerhale.com/')
+            div.goldTile
+              img(src='/images/logo/wilmerhale.png')
+          a(href='http://www.morgenthaler.com/')
+            div.goldTile
+              img(src='/images/logo/morgenthaler.png')
+          a(href='http://www.perkinscoie.com/')
+            div.goldTile
+              img(src='/images/logo/perkinscoie.png')
+          a(href='http://www.founder.org/')
+            div.goldTile
+              img(src='/images/logo/founderorg.png')
+        div.sponsorTiles
+          h1 Silver Sponsors
+          hr.accent
+          a(href='http://www.meruscap.com/')
+            div.silverTile
+              img(src='/images/logo/meruscapital.png')
+          a(href='http://www.dandb.com/')
+            div.silverTile
+              img(id='db' src='/images/logo/dunbradstreet.png')
+          a(href='http://www.svb.com/')
+            div.silverTile
+              img(src='/images/logo/svb.png')
+          a(href='http://www.metromile.com/')
+            div.silverTile
+              img(src='/images/logo/metromile.png')
 
-        h1 Silver Sponsors
-        hr.accent
-        div.text
-         div.platinum
-          p <a href = 'http://www.meruscap.com/'><img src = '/images/merus.png' style = "padding-right: 10px"></a> <a href = 'http://www.dandb.com/'><img src = '/images/dunbradstreet.png' style = "padding-right: 10px"> <a href = "http://www.svb.com/"> <img src = "/images/logo-svb-block.png" style = "padding-right: 10px"> </a>
-
-        h1 Our Partners
+        h1 Our Sponsors
         hr.accent
         div.text
           p
-            | BASES is a non-profit student organization. The scale and success of our programs would not be possible without the support of our partners. 
+            | BASES is a non-profit student organization. The scale and success of our programs would not be possible without the support of our sponsors.
           p
-            | For nearly two decades, our partners have done much more than fund our programs. Every year, BASES members benefit immeasurably from the time our partners devote to our mentorship programs, judging panels, office hours, and speaker series.  
+            | For nearly two decades, our sponsors have done much more than fund our programs. Every year, BASES members benefit immeasurably from the time our sponsors devote to our mentorship programs, judging panels, office hours, and speaker series.
           p
-            | BASES’s mission is to empower the next generation of entrepreneurs. Our partners provide us with the resources and experience to do so. Working together, we cannot wait to see which leaders and innovators BASES’s next twenty years will produce. 
+            | BASES’s mission is to empower the next generation of entrepreneurs. Our sponsors provide us with the resources and experience to do so. Working together, we cannot wait to see which leaders and innovators BASES’s next twenty years will produce.
 
         h1 Sponsor BASES
         hr.accent
         div.text
           p
-            | BASES creates a customized strategy for each of our partners to ensure we achieve their partnership objectives. A dedicated BASES Account Executive works with each sponsor to leverage our organization and resources to maximize our partners’ impact on campus. 
+            | BASES creates a customized strategy for each of our sponsors to ensure we achieve their sponsorship objectives. A dedicated BASES Sponsorship Executive works with each sponsor to leverage our organization and resources to maximize our sponsors’ impact on campus.
           p
-            | Some of the main ways we support our partners include:
+            | Some of the main ways we support our sponsors include:
 
         div.textList
           ul
             li Strengthening their <b>brand presence</b> on campus
             li <b>Recruiting</b> the best Stanford programmers and engineers
-            li Developing meaningful <b>relationships</b> with student entrepreneurs 
+            li Developing meaningful <b>relationships</b> with student entrepreneurs
             li <b>Exclusive access</b> to the most exciting startups and technologies coming out of Stanford
-              
+
         h1 Contact Us
         hr.accent
         div.text
           p Jonathan Lu (<a href='mailto:jonlu@stanford.edu'>jonlu@stanford.edu</a>), VP of Business Development.
-        
+
     include ../footerFilesOthers.jade
