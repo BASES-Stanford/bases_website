@@ -144,4 +144,8 @@ exports.eGuideExternalResources = function(req, res) {
 
 exports.stagingHomepage = function(req, res) {
 	res.render('staging/homepage');
-}
+};
+
+exports.about = function(req, res) {
+	res.render('about');
+};

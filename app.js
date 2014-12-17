@@ -91,6 +91,8 @@ app.get('/eGuideLabs', routes.eGuideLabs);
 app.get('/eGuideCampusResources', routes.eGuideCampusResources);
 app.get('/eGuideExternalResources', routes.eGuideExternalResources);
 
+app.get('/about', routes.about);
+
 //Private
 app.get('/staging/homepage', routes.stagingHomepage);
 // In case of bad routing
