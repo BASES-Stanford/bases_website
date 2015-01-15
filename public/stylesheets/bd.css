@@ -16,7 +16,12 @@
   padding: 10px;
 }
 
-.goldTile:hover {
+.tile {
+  -webkit-transition: 0.25s;
+  transition: 0.5s;
+}
+
+.tile:hover {
   background: #e0eeee;
   cursor: pointer;
 }
@@ -31,10 +36,6 @@
   padding: 10px;
 }
 
-.silverTile:hover {
-  background: #e0eeee;
-  cursor: pointer;
-}
 
 .goldTile img {
   width: 240px;
@@ -57,3 +58,16 @@
   display: block;
   margin: auto;
 }
+
+/*.tile {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+
+.tile:hover {
+  cursor: pointer;
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}*/
