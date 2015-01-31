@@ -6,6 +6,25 @@
   margin-bottom: 50px;
 }
 
+.platinumTile {
+  height: 360px;
+  width: 360px;
+  display: inline-block;
+  margin: 6px;
+  box-shadow: 1px 1px 1px #bbb;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.platinumTile img {
+  width: 240px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+}
+
 .goldTile {
   height: 300px;
   width: 300px;
