@@ -182,6 +182,20 @@ h2 {
 	opacity: 0.85;
 }
 
+#heroWIE {
+	width: 100%;
+	height: 650px;
+	background-image: url('/images/wie.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	opacity: 0.85;
+}
+
 #heroInTheNews{
 	width: 100%;
 	height: 650px;

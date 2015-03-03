@@ -13,7 +13,7 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
-  app.set('port', 3000);//process.env.PORT || 80);
+  app.set('port', process.env.PORT || 80);
   app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -47,6 +47,7 @@ app.get('/programs/profDev', routes.profDev);
 app.get('/programs/core', routes.core);
 app.get('/programs/freshmanBat', routes.freshmanBat);
 app.get('/programs/internship', routes.internship);
+app.get('/programs/WIE', routes.WIE);
 
 //History
 app.get('/history', routes.index);

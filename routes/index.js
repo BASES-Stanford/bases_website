@@ -58,6 +58,10 @@ exports.internship = function (req, res) {
 	res.render('programs/internship');
 };
 
+exports.WIE = function (req, res) {
+	res.render('programs/WIE');
+};
+
 exports.pastWinners = function (req, res) {
 	res.render('history/pastWinners');
 };
