@@ -185,7 +185,7 @@ h2 {
 #heroWIE {
 	width: 100%;
 	height: 650px;
-	background-image: url('/images/wie.jpeg');
+	background-image: url('/images/wie/wie.jpeg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	-webkit-filter: blur(3px);
