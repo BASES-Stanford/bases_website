@@ -13,6 +13,7 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
+  // app.set('port', 3000);
   app.set('port', process.env.PORT || 80);
   app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
   app.set('views', __dirname + '/views');
@@ -94,8 +95,10 @@ app.get('/eGuideExternalResources', routes.eGuideExternalResources);
 
 app.get('/about', routes.about);
 
-//Private
+//Staging
 app.get('/staging/homepage', routes.stagingHomepage);
+app.get('/staging/programs/connects', routes.stagingConnects);
+app.get('/staging/sponsors', routes.stagingSponsors);
 // In case of bad routing
 //app.get('/*', routes.index);
 
