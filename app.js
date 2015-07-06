@@ -96,9 +96,9 @@ app.get('/eGuideExternalResources', routes.eGuideExternalResources);
 app.get('/about', routes.about);
 
 //Staging
-app.get('/staging/homepage', routes.stagingHomepage);
-app.get('/staging/programs/connects', routes.stagingConnects);
-app.get('/staging/sponsors', routes.stagingSponsors);
+// app.get('/staging/homepage', routes.stagingHomepage);
+// app.get('/staging/programs/connects', routes.stagingConnects);
+// app.get('/staging/sponsors', routes.stagingSponsors);
 // In case of bad routing
 //app.get('/*', routes.index);
 

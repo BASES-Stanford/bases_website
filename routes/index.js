@@ -146,10 +146,22 @@ exports.eGuideExternalResources = function(req, res) {
 	res.render('eguide/externalResources');
 };
 
-exports.stagingHomepage = function(req, res) {
-	res.render('staging/homepage');
-};
-
 exports.about = function(req, res) {
 	res.render('about');
 };
+
+/**********************************************************
+STAGING
+**********************************************************/
+
+// exports.stagingHomepage = function(req, res) {
+// 	res.render('staging/homepage');
+// };
+
+// exports.stagingConnects = function(req, res) {
+// 	res.render('staging/programs/connects');
+// };
+
+// exports.stagingSponsors = function(req, res) {
+// 	res.render('staging/sponsors');
+// };
