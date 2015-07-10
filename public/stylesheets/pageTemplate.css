@@ -50,14 +50,19 @@ h2 {
 
 #cover {
 	width: 100%;
-	height: 550px;
+	height: 190px;
 	overflow: hidden;
 	background: #222;
 }
 
+#blank {
+	width: 100%;
+	height: 45px;
+}
+
 #hero {
 	width: 100%;
-	height: 650px;
+	height: 200px;
 	background-image: url('/images/eChallenge.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -226,14 +231,13 @@ h2 {
 
 #heroText {
 	font-family: "Bebas-Neue";
-	font-size: 130px;
+	font-size: 90px;
 	width: 100%;
-	height: 100px;
 	color: #ffffff;
 	text-align: center;
 	position: relative;
 	margin: 0 auto;
-	top: -450px;
+	top: -160px;
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 

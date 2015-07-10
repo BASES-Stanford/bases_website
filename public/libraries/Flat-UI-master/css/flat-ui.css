@@ -872,15 +872,17 @@ address {
 }
 .navbar .nav ul li {
   background-color: #34495e;
-  padding: 0 3px 3px;
+  /*padding: 0 3px 3px;*/
+  padding: 0 0 3px;
   position: relative;
 }
 .navbar .nav ul li:first-child {
-  border-radius: 6px 6px 0 0;
-  padding-top: 3px;
+  border-radius: 4px 4px 0 0;
+  /*padding-top: 3px;*/
 }
 .navbar .nav ul li:last-child {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 4px 4px;
+  padding: 0;
 }
 .navbar .nav ul li.active > a,
 .navbar .nav ul li.active > a:hover,
@@ -895,11 +897,11 @@ address {
   padding-right: 9px;
 }
 .navbar .nav ul a {
-  border-radius: 2px;
+  border-radius: inherit;
   color: #ffffff;
   display: block;
   font-size: 14px;
-  padding: 6px 9px;
+  padding: 7px 10px;
   text-decoration: none;
 }
 .navbar .nav ul a:hover {
