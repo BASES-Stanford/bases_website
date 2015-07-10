@@ -13,8 +13,8 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
-  // app.set('port', 3000);
-  app.set('port', process.env.PORT || 80);
+  app.set('port', 3000);
+  // app.set('port', process.env.PORT || 80);
   app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -79,9 +79,8 @@ app.get('/blog', routes.blog);
 //No pages here, just direct link
 app.get('/internal', routes.internal);
 
-//Partners
-app.get('/partners', routes.index);
-app.get('/partners/sponsors', routes.sponsors);
+//Sponsors
+app.get('/sponsors', routes.sponsors);
 app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
 
 //E-Guide
@@ -97,8 +96,6 @@ app.get('/about', routes.about);
 
 //Staging
 // app.get('/staging/homepage', routes.stagingHomepage);
-// app.get('/staging/programs/connects', routes.stagingConnects);
-// app.get('/staging/sponsors', routes.stagingSponsors);
 // In case of bad routing
 //app.get('/*', routes.index);
 

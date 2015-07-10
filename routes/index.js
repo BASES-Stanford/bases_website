@@ -111,7 +111,7 @@ exports.brandingGuideLines = function (req, res) {
 };
 
 exports.sponsors = function (req, res) {
-	res.render('partners/sponsors');
+	res.render('sponsors');
 };
 
 exports.boardOfAdvisors = function (req, res) {
@@ -156,12 +156,4 @@ STAGING
 
 // exports.stagingHomepage = function(req, res) {
 // 	res.render('staging/homepage');
-// };
-
-// exports.stagingConnects = function(req, res) {
-// 	res.render('staging/programs/connects');
-// };
-
-// exports.stagingSponsors = function(req, res) {
-// 	res.render('staging/sponsors');
 // };
