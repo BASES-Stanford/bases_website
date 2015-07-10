@@ -81,7 +81,6 @@ app.get('/internal', routes.internal);
 
 //Sponsors
 app.get('/sponsors', routes.sponsors);
-app.get('/partners/boardOfAdvisors', routes.boardOfAdvisors);
 
 //E-Guide
 app.get('/eGuide', routes.eGuide);
@@ -93,6 +92,7 @@ app.get('/eGuideCampusResources', routes.eGuideCampusResources);
 app.get('/eGuideExternalResources', routes.eGuideExternalResources);
 
 app.get('/about', routes.about);
+app.get('/about/boardOfAdvisors', routes.boardOfAdvisors);
 
 //Staging
 // app.get('/staging/homepage', routes.stagingHomepage);

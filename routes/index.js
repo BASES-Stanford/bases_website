@@ -114,10 +114,6 @@ exports.sponsors = function (req, res) {
 	res.render('sponsors');
 };
 
-exports.boardOfAdvisors = function (req, res) {
-	res.render('partners/boardOfAdvisors');
-};
-
 exports.eGuide = function(req, res) {
 	res.render('eguide/home');
 };
@@ -147,7 +143,11 @@ exports.eGuideExternalResources = function(req, res) {
 };
 
 exports.about = function(req, res) {
-	res.render('about');
+	res.render('about/team');
+};
+
+exports.boardOfAdvisors = function (req, res) {
+	res.render('about/boardOfAdvisors');
 };
 
 /**********************************************************

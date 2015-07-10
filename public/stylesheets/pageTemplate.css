@@ -48,19 +48,23 @@ h2 {
 	margin-bottom: 10px;
 }
 
-#cover {
+#blank {
+	width: 100%;
+	height: 45px;
+}
+
+.cover {
 	width: 100%;
 	height: 160px;
 	overflow: hidden;
 	background: #222;
 }
 
-#blank {
-	width: 100%;
-	height: 45px;
+.coverBig {
+	height: 650px;
 }
 
-#hero {
+.hero {
 	width: 100%;
 	height: 200px;
 	background-image: url('/images/eChallenge.jpg');
@@ -74,162 +78,11 @@ h2 {
 	opacity: 0.85;
 }
 
-#heroHackSpace {
-	width: 100%;
+.coverBig .hero {
 	height: 650px;
-	background-image: url('/images/eChallenge.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
 }
 
-
-#heroetl {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/rabinowitz.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#herofreshmanBat {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/freshmanBat.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroPastWinners {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/PastWinners.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroCareerFairs {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/CareerFairs.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroStartupLunch {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/StartupLunch.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroProductShowcase {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/ProductShowcase.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#herosocialE {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/socialEChallenge.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroWIE {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/wie/wie.jpeg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroInTheNews{
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/Media.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#herobrandingGuideLines{
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/brandingGuideLines.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroText {
+.heroText {
 	font-family: "Bebas-Neue";
 	font-size: 90px;
 	width: 100%;
@@ -241,94 +94,90 @@ h2 {
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
-#heroFriends {
-	width: 100%;
-	height: 650px;
-	background-image: url('/images/milkyway.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-	-o-filter: blur(2px);
-	-ms-filter: blur(2px);
-	filter: blur(2px);
-	opacity: 0.85;
+.coverBig .heroText {
+	top: -450px;
 }
 
+.heroText img {
+	width: auto;
+	height: 200px;
+}
+
+#heroETL {
+	background-image: url('/images/rabinowitz.jpg');
+}
+
+#heroFreshmanBat {
+	background-image: url('/images/freshmanBat.jpg');
+}
+
+#heroPastWinners {
+	background-image: url('/images/PastWinners.jpg');
+}
+
+#heroCareerFairs {
+	background-image: url('/images/CareerFairs.jpg');
+}
+
+#heroStartupLunch {
+	background-image: url('/images/StartupLunch.jpg');
+}
+
+#coverFriends {
+	height: 600px;
+}
+
+#heroFriends {
+	height: 650px;
+	background-image: url('/images/milkyway.jpg');
+}
+
+#heroProductShowcase {
+	background-image: url('/images/ProductShowcase.jpg');
+}
+
+#herosocialE {
+	background-image: url('/images/socialEChallenge.jpg');
+}
+
+#heroWIE {
+	height: 650px;
+	background-image: url('/images/wie/wie.jpeg');
+}
+
+#heroInTheNews{
+	height: 650px;
+	background-image: url('/images/Media.jpg');
+}
+
+#herobrandingGuideLines{
+	height: 650px;
+	background-image: url('/images/brandingGuideLines.jpg');
+}
 
 #heroEGuide {
-	width: 100%;
 	height: 650px;
 	background-image: url('/images/eguidehome.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
 }
 
 #heroEGuideClasses {
-	width: 100%;
 	height: 650px;
 	background-image: url('/images/eguideclasses.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
 }
 
 #heroEGuideGroups {
-	width: 100%;
 	height: 650px;
 	background-image: url('/images/eguidegroups.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
 }
 
 #heroEGuideResources {
-	width: 100%;
 	height: 650px;
 	background-image: url('/images/eguideresources.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
 }
 
 #heroEGuideLabs{
-	width: 100%;
 	height: 650px;
 	background-image: url('/images/eguidelabs.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
-	opacity: 0.85;
-}
-
-#heroText img {
-	width: auto;
-	height: 200px;
 }
 
 #content {
