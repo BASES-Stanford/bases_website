@@ -1,0 +1,378 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #666666;
+}
+
+#blank {
+  width: 100%;
+  height: 45px;
+}
+
+.home-cover {
+  position: relative;
+  height: 0;
+}
+
+.banner {
+  font-family: "Crimson Text", sans-serif;
+  display: inline-block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 3.5em;
+  line-height: 1.3em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #333333;
+  width: 100%;
+  text-align: center;
+}
+
+#main-banner {
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+
+.line-banner {
+  opacity: 0.5;
+  width: 70vw;
+  border-color: #000000;
+}
+
+.banner-motto {
+  font-size: 0.6em;
+  text-align: center;
+  font-style: italic;
+  color: #444444;
+  line-height: 1.2em;
+}
+
+.relevantInfo {
+  position: relative;
+  top: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.relevant-box {
+  border: solid 2px #fff;
+  border-radius: 2px;
+}
+
+.carousel-container {
+  width: 700px;
+  float: left;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+  margin-bottom: 0;
+}
+
+.carousel-inner .item img,
+.carousel-inner .item a img {
+  height: 360px;
+  margin: auto;
+}
+
+.carousel-caption {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.3);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+}
+
+.carousel-control {
+  width: 10%;
+}
+
+.relevantInfo-secondary {
+  float: right;
+  height: 172px;
+  width: 270px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.relevantInfo-secondary:last-child {
+  margin-bottom: 0;
+}
+
+.relevantInfo-secondary img {
+  height: 100%;
+  width: 100%;
+}
+
+.secondary-caption {
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: rgba(0,0,0,0.3);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.secondary-caption p {
+  font-size: 1em;
+  line-height: 1;
+  margin: 4px 0 6px;
+}
+
+.fullscreen {
+  height: 100%;
+  height: calc(100% - 45px);
+  width: 100%;
+}
+
+.infoSection {
+  min-height: 350px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.infoSection-header {
+  height: 60px;
+  background-color: #990000;
+}
+
+.infoSection-title {
+  text-align: center;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #990000;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.infoSection-description {
+  font-size: 30px;
+  text-align: center;
+}
+.infoSection-description-about {
+  font-size: 22px;
+  text-align: center;
+  color:#666666;
+  font-weight :300;
+  line-height: 1.7;
+  font-family : "Open Sans", sans-serif
+}
+
+.infoSection-description-announcement {
+  font-size: 20px;
+  text-align: center;
+  color:#B3B3B3;
+  font-weight :300;
+  line-height: 1.8;
+  font-family : "Open Sans", sans-serif
+}
+
+.infoSection-description-heading {
+  color: #666666;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+hr.divider {
+  background: url('/images/divider.png') 0 0 no-repeat;
+  border: 0;
+  height: 10px;
+  width: 100%;
+  margin: 40px 0px 40px 0px;
+}
+
+.card {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.card-info {
+  min-height: 300px;
+}
+
+.card-new-noclick {
+  min-height: 300px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new {
+  margin-bottom: 30px;
+  padding: 10px;
+  min-height: 300px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new-large {
+  margin-bottom: 30px;
+  padding: 10px;
+  min-height: 300px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new-partners {
+  margin-bottom: 30px;
+  padding: 10px;
+  min-height: 150px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #555;
+}
+
+.card-new:hover {
+  cursor: pointer;
+}
+
+.card-new:hover .card-title{
+  color: #555;
+}
+
+.card-info .card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #990000;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card-info .card-content {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card-new .card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #990000;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card-new .card-content {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#home {
+  background-image: url('/staging/images/basesCover.jpg');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+     -mox-filter: blur(2px);
+       -o-filter: blur(2px);
+}
+
+#eChallenge {
+  background-image: url('/images/eChallenge.jpg');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  padding-top: 180px;
+}
+
+/*Bootstrap overrides*/
+hr {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  height: 60px;
+  line-height: 40px;
+  background: #34495e;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.mainScreen {
+  width : 100%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.2;
+  background: rgba(0,0,0,0.6) !important;
+}
+
+.bg1 {
+  background: #F7F0F2;
+}
+
+.bg2 {
+  background: #fff;
+}
+
+/*
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+*/
+
+.clear {
+  clear: both;
+}
+
+.block {
+  width: 100%;
+  display: block;
+  margin-top: 100px;
+}
+
+.center {
+  overflow: hidden;
+  margin-left: auto ;
+  margin-right: auto ;
+}

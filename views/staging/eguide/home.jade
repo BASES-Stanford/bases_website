@@ -1,0 +1,33 @@
+doctype 5
+html
+
+  head
+    title BASES | E-Guide
+    include ../headerFilesOthers.jade
+
+  body
+    include ../navBarOthers.jade
+    div.cover.coverBig
+      div#heroEGuide.hero
+      div.heroText E-Guide
+    div#content 
+      h1 Welcome
+      hr.accent
+      div.text 
+       p Welcome to the BASES E-Guide, an invaluable resource for all interested in entrepreneurship at Stanford University and the Bay Area. The E-Guide is a collaborative effort among the members of the BASES team.
+      h1 Contents
+      hr.accent
+      div.text
+        p
+          a#eguidecontents(href='/eGuideClasses') Classes
+        p
+          a#eguidecontents(href='/eGuideGroups') Groups
+        p
+          a#eguidecontents(href='/eGuideLabs') Labs
+        p
+          a#eguidecontents(href='/eGuideCampusResources') Campus Resources
+        p
+          a#eguidecontents(href='/eGuideExternalResources') External Resources
+        p
+          a#eguidecontents(href='https://github.com/BASES-Stanford/BASES_E-Guide') Contribute to the E-Guide
+    include ../footerFilesOthers.jade   
