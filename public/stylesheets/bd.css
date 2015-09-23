@@ -52,6 +52,15 @@
   margin: auto;
 }
 
+.silverTile img {
+  width: 180px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+}
+
 #acc img {
   top: 50px;
 }
@@ -64,6 +73,10 @@
   top: 55px;
 }
 
+#svb img {
+  width: 120px;
+}
+
 .silverTile {
   height: 100px;
   width: 225px;
@@ -74,15 +87,6 @@
 
 #db {
   width: 100px;
-}
-
-.silverTile img {
-  width: 180px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  margin: auto;
 }
 
 #dropbox img {
