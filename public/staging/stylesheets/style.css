@@ -21,9 +21,9 @@ html, body {
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
   font-size: 3.5em;
-  line-height: 1.3em;
+  line-height: 1.6em;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   color: #333333;
   width: 100%;
   text-align: center;
@@ -31,7 +31,7 @@ html, body {
 
 #main-banner {
   position: relative;
-  top: 20px;
+  top: 55px;
   z-index: 1;
 }
 
@@ -299,10 +299,6 @@ hr.divider {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-     -mox-filter: blur(2px);
-       -o-filter: blur(2px);
 }
 
 #eChallenge {
@@ -375,4 +371,47 @@ hr {
   overflow: hidden;
   margin-left: auto ;
   margin-right: auto ;
+}
+
+.landing-programs-blurb {
+  font-size: 22px;
+  text-align: left;
+  color: #666666;
+  font-weight: 300;
+  line-height: 1.7;
+  font-family: "Open Sans", sans-serif;
+}
+
+.landing-programs-list {
+  margin-top: 20px;
+}
+
+.landing-programs-list h1 {
+  font-size: 45px;
+  color: #990000;
+  text-align: right;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+}
+
+.landing-programs-list .program-name {
+  font-size: 32px;
+  color: inherit;
+  margin-top: 15px;
+  display: inline-block;
+  color: #34495e;
+}
+
+.landing-programs-list .subprogram-title {
+  text-align: left;
+  margin-left: 20px;
+  padding: 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.landing-programs-list p {
+  font-weight: 300;
 }

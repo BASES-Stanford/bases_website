@@ -104,12 +104,13 @@ BEGIN STAGING
 app.get('/staging/', routes.stagingindex);
 // app.get('/staging/test', routes.stagingtest);
 
-app.get('/staging/events', routes.stagingevents);
-
 //Programs
 app.get('/staging/programs', routes.stagingprograms);
-app.get('/staging/challenge', routes.stagingindex);
-app.get('/staging/programs/branding', routes.stagingbranding);
+app.get('/staging/programs/connects', routes.stagingconnects);
+app.get('/staging/programs/externalRelations', routes.stagingexternalRelations);
+app.get('/staging/programs/socImpact', routes.stagingsocImpact);
+app.get('/staging/programs/cnect', routes.stagingcnect);
+app.get('/staging/programs/createspace', routes.stagingcreatespace);
 app.get('/staging/programs/challenge', routes.stagingchallenge);
 app.get('/staging/programs/eChallenge', routes.stagingeChallenge);
 app.get('/staging/programs/socialEChallenge', routes.stagingsocialEChallenge);
@@ -118,27 +119,22 @@ app.get('/staging/programs/etl', routes.stagingetl);
 app.get('/staging/programs/hackspace', routes.staginghackspace);
 app.get('/staging/programs/hackspace/workshops', hackspace.workshops);
 app.get('/staging/programs/hackspace/workshops/1', hackspace.websiteWorkshop);
-app.get('/staging/programs/profDev', routes.stagingprofDev);
-app.get('/staging/programs/core', routes.stagingcore);
 app.get('/staging/programs/freshmanBat', routes.stagingfreshmanBat);
-app.get('/staging/programs/internship', routes.staginginternship);
 app.get('/staging/programs/WIE', routes.stagingWIE);
 app.get('/staging/programs/careerFairs', routes.stagingcareerFairs);
 app.get('/staging/programs/startupLunch', routes.stagingstartupLunch);
 app.get('/staging/programs/lessonsInLife', routes.staginglessonsInLife);
 
-//History
-app.get('/staging/history', routes.stagingindex);
-app.get('/staging/history/pastWinners', routes.stagingpastWinners);
-app.get('/staging/history/eBootCamp', routes.stagingeBootCamp);
+//Events
+app.get('/staging/events', routes.stagingevents);
 
 //Get Involved
-app.get('/staging/getInvolved', routes.stagingindex);
+app.get('/staging/getInvolved', routes.staginggetInvolved);
 app.get('/staging/getInvolved/digest', routes.stagingdigest);
 app.get('/staging/getInvolved/registration', routes.stagingregistration);
 app.get('/staging/getInvolved/friends', routes.stagingfriends);
 
-// Media
+//Media
 app.get('/staging/media', routes.stagingindex);
 app.get('/staging/media/events', routes.stagingmediaevents);
 app.get('/staging/media/inTheNews', routes.staginginTheNews);
@@ -164,8 +160,9 @@ app.get('/staging/eGuideLabs', routes.stagingeGuideLabs);
 app.get('/staging/eGuideCampusResources', routes.stagingeGuideCampusResources);
 app.get('/staging/eGuideExternalResources', routes.stagingeGuideExternalResources);
 
+//About
 app.get('/staging/about', routes.stagingabout);
-app.get('/staging/about/officers', routes.stagingofficers);
+app.get('/staging/about/team', routes.stagingteam);
 app.get('/staging/about/boardOfAdvisors', routes.stagingboardOfAdvisors);
 app.get('/staging/about/alumni', routes.stagingalumni);
 /*************************************

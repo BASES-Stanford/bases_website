@@ -158,16 +158,33 @@ exports.stagingindex = function(req, res) {
 	res.render('staging/index');
 };
 
-// exports.stagingtest = function(req, res) {
-// 	res.render('staging/test');
-// };
-
-exports.stagingevents = function(req, res) {
-	res.render('staging/events');
+exports.stagingtest = function(req, res) {
+	res.render('staging/test');
 };
 
+//Programs
 exports.stagingprograms = function(req,res) {
 	res.render('staging/programs/index');
+};
+
+exports.stagingconnects = function(req,res) {
+	res.render('staging/programs/connects');
+};
+
+exports.stagingexternalRelations = function(req,res) {
+	res.render('staging/programs/externalRelations');
+};
+
+exports.stagingsocImpact = function(req,res) {
+	res.render('staging/programs/socImpact');
+};
+
+exports.stagingcnect = function(req,res) {
+	res.render('staging/programs/cnect');
+};
+
+exports.stagingcreatespace = function(req,res) {
+	res.render('staging/programs/createspace');
 };
 
 exports.stagingbranding = function(req,res) {
@@ -238,54 +255,51 @@ exports.staginglessonsInLife = function(req, res) {
 	res.render('staging/programs/lessonsInLife');
 };
 
-exports.stagingpastWinners = function (req, res) {
-	res.render('staging/history/pastWinners');
+//Events
+exports.stagingevents = function(req, res) {
+	res.render('staging/events');
 };
 
+//Get Involved
+exports.staginggetInvolved = function (req, res) {
+	res.render ('staging/getInvolved');
+};
 exports.stagingdigest = function (req, res) {
-	res.render ('getInvolved/digest');
+	res.render ('staging/getInvolved/digest');
 };
-
 exports.stagingregistration = function (req, res) {
 	res.render('staging/getInvolved/registration');
 };
-
 exports.stagingfriends = function(req, res) {
 	res.render('staging/getInvolved/friends');
-}
+};
 
 exports.stagingblog = function(req, res) {
 	res.redirect('http://stanfordbases.wordpress.com/');
 };
 
+//Media
 exports.stagingmediaevents = function (req, res) {
 	res.render('staging/media/events');
 };
-
 exports.staginginTheNews = function (req, res) {
 	res.render('staging/media/inTheNews');
 };
-
 exports.stagingbrandingGuideLines = function (req, res) {
 	res.render('staging/media/brandingGuideLines');
 };
-
 exports.stagingsponsors = function (req, res) {
 	res.render('staging/sponsors');
 };
-
 exports.stagingeGuide = function(req, res) {
 	res.render('staging/eguide/home');
 };
-
 exports.stagingeGuidePrivate = function(req, res) {
 	res.render('staging/eguide/home');
 };
-
 exports.stagingeGuideClasses = function(req, res) {
 	res.render('staging/eguide/classes');
 };
-
 exports.stagingeGuideGroups = function(req, res) {
 	res.render('staging/eguide/groups');
 };
@@ -302,12 +316,13 @@ exports.stagingeGuideExternalResources = function(req, res) {
 	res.render('staging/eguide/externalResources');
 };
 
+//About
 exports.stagingabout = function(req, res) {
 	res.render('staging/about/index');
 };
 
-exports.stagingofficers = function(req, res) {
-	res.render('staging/about/officers');
+exports.stagingteam = function(req, res) {
+	res.render('staging/about/team');
 };
 
 exports.stagingboardOfAdvisors = function (req, res) {
