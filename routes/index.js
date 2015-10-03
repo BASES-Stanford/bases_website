@@ -31,56 +31,20 @@ exports.createspace = function(req,res) {
 	res.render('programs/createspace');
 };
 
-exports.branding = function(req,res) {
-	res.render('programs/branding');
-};
-
 exports.challenge = function(req, res) {
 	res.render('programs/challenge');
-};
-
-exports.eChallenge = function(req, res) {
-	res.render('programs/eChallenge');
-};
-
-exports.socialEChallenge = function(req, res) {
-	res.render('programs/socialEChallenge');
-};
-
-exports.productShowCase = function(req, res) {
-	res.render('programs/productShowCase');
 };
 
 exports.internal = function(req, res) {
 	res.redirect('https://sites.google.com/site/baseshome/');
 };
 
-exports.eBootCamp = function(req, res) {
-	res.render('history/eBootCamp');
-};
-
 exports.etl = function(req, res) {
 	res.render('programs/etl');
 };
 
-exports.hackspace = function(req, res) {
-	res.render('programs/hackspace');
-};
-
-exports.profDev = function (req, res) {
-	res.render('programs/profDev');
-};
-
-exports.core = function (req, res) {
-	res.render('programs/core');
-};
-
 exports.freshmanBat = function (req, res) {
 	res.render('programs/freshmanBat');
-};
-
-exports.internship = function (req, res) {
-	res.render('programs/internship');
 };
 
 exports.WIE = function (req, res) {
@@ -107,12 +71,6 @@ exports.events = function(req, res) {
 //Get Involved
 exports.getInvolved = function (req, res) {
 	res.render ('getInvolved');
-};
-exports.digest = function (req, res) {
-	res.render ('getInvolved/digest');
-};
-exports.registration = function (req, res) {
-	res.render('getInvolved/registration');
 };
 exports.friends = function(req, res) {
 	res.render('getInvolved/friends');

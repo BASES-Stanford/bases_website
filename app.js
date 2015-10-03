@@ -40,32 +40,30 @@ app.get('/programs/cnect', routes.cnect);
 app.get('/programs/createspace', routes.createspace);
 app.get('/programs/challenge', routes.challenge);
 app.get('/programs/freshmanBat', routes.freshmanBat);
-app.get('/programs/careerFairs', routes.careerFairs);
-app.get('/programs/startupLunch', routes.startupLunch);
-app.get('/programs/lessonsInLife', routes.lessonsInLife);
+// app.get('/programs/careerFairs', routes.careerFairs);
+// app.get('/programs/startupLunch', routes.startupLunch);
+// app.get('/programs/lessonsInLife', routes.lessonsInLife);
 
 //Events
 app.get('/events', routes.events);
 
 //Get Involved
 app.get('/getInvolved', routes.getInvolved);
-app.get('/getInvolved/digest', routes.digest);
-app.get('/getInvolved/registration', routes.registration);
 app.get('/getInvolved/friends', routes.friends);
 
 //Media
-app.get('/media', routes.index);
-app.get('/media/events', routes.mediaevents);
-app.get('/media/inTheNews', routes.inTheNews);
-app.get('/media/brandingGuideLines', routes.brandingGuideLines);
-app.get('/e-bootcamp', routes.eBootCamp);
+// app.get('/media', routes.index);
+// app.get('/media/events', routes.mediaevents);
+// app.get('/media/inTheNews', routes.inTheNews);
+// app.get('/media/brandingGuideLines', routes.brandingGuideLines);
+// app.get('/e-bootcamp', routes.eBootCamp);
 
 //Blog
-app.get('/blog', routes.blog);
+// app.get('/blog', routes.blog);
 
 //Internal
 //No pages here, just direct link
-// app.get('/internal', routes.internal);
+app.get('/internal', routes.internal);
 
 //Sponsors
 app.get('/sponsors', routes.sponsors);
