@@ -1,57 +1,49 @@
 div.navbar.navbar-inverse.navbar-fixed-top
-      ul.nav
+  ul.nav
+    li
+      a.navbarLogo(href='/')
+        img(src='/images/basesLogo.png')
+  ul.nav
+    li
+      a(href='/programs') Programs
+      ul
         li
-          a.navbarLogo(href='/')
-            img(src='/images/basesLogo.png')
-      ul.nav
+          a(href='/programs/connects') Connects
         li
-          a(href='/#programs') Programs
-          ul
-            li
-              a(href='/programs/challenge') BASES Challenge
-            li
-              a(href='/programs/etl') ETL
-            li
-              a(href='/programs/hackspace') Hackspace
-            li
-              a(href='/programs/profDev') Professional Development
-            li
-              a(href='/programs/freshmanBat') Freshman Battalion
+          a(href='/programs/externalRelations') External Relations
         li
-          a(href='/#history') History
-          ul
-            li
-              a(href='/history/pastWinners') Past Winners
-            li
-              a(href='/history/alumni') Alumni
-            li
-              a(href='/history/eBootCamp') E-Bootcamp
-
+          a(href='/programs/socImpact') Social Impact
         li
-          a(href='/#getInvolved') Get Involved
-          ul
-            li
-              a(href='/getInvolved/careerFairs') Career Fairs
-            li
-              a(href='/getInvolved/startupLunch') Startup Lunch
-            li
-              a(href='/getInvolved/lessonsInLife') Lessons in Life
-            li
-              a(href='/#getInvolved') Digest
-            li
-              a(href='/#getInvolved') Join the Team
-            li
-              a(href='/getInvolved/friends') Friends
+          a(href='/programs/cnect') CNECT
         li
-          a(href='/sponsors') Sponsors
+          a(href='/programs/createspace') CreateSpace
         li
-          a(href='/blog') Blog
+          a(href='/programs/challenge') BASES Challenge
+        //- li
+          a(href='/programs/etl') ETL
         li
-          a(href='/eGuide') E-Guide
+          a(href='/programs/freshmanBat') Freshman Battalion
+        //- li
+          a(href='/programs/careerFairs') Career Fairs
+        //- li
+          a(href='/programs/startupLunch') Startup Lunch
+        //- li
+          a(href='/programs/lessonsInLife') Lessons in Life
+    li
+      a(href='/events') Events
+    li
+      a(href='/getInvolved') Get Involved
+    li
+      a(href='/sponsors') Sponsors
+    //- li
+      a(href='/blog') Blog
+    li
+      a(href='/about') About
+      ul
         li
-          a(href='/about') About
-          ul
-            li
-              a(href='/about') Executive Team
-            li
-              a(href='/about/boardOfAdvisors') Board of Advisors
+          a(href='/about/team') Team
+        li
+          a(href='/about/boardOfAdvisors') Board of Advisors
+        li
+          a(href='/about/alumni') Alumni
+div#blank
