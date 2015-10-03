@@ -256,6 +256,25 @@ a.anchor{
 	text-decoration: underline;
 }
 
+.text .socImpact-event div {
+	text-align: left;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.past-winners {
+	margin-bottom: 30px;
+}
+
+.past-winners-category {
+	font-size: 32px;
+}
+
+.socImpact-event .main-info {
+	font-weight: 500;
+	text-decoration: underline;
+}
+
 .large-photo-container {
 	text-align: center;
 }
@@ -328,4 +347,12 @@ h2.officer-name {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.boa .text p {
+	overflow: hidden;
+}
+
+.boa-pic {
+	height: 200px;
 }
