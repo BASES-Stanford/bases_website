@@ -3,6 +3,7 @@ html
 
   head
     title BASES | Events
+    link(rel='stylesheet', href='/libraries/fullcalendar/fullcalendar.css')
     include headerFilesOthers.jade
   body
     include navBarOthers.jade
@@ -13,7 +14,29 @@ html
       div#content
         h1 Upcoming Events
         hr.accent
-        div.text
-          iframe#calendar(src="https://www.google.com/calendar/embed?src=en5uj53ua739idt0m8lrl227m8%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" frameborder="0" scrolling="no")
+        div#calendar
 
     include footerFilesOthers.jade
+    script(type='text/javascript', src='/libraries/fullcalendar/lib/moment.min.js')
+    script(type='text/javascript', src='/libraries/fullcalendar/fullcalendar.js')
+    script(type='text/javascript', src='/libraries/fullcalendar/gcal.js')
+    script.
+      $(document).ready(function() {
+        $('#calendar').fullCalendar({
+          googleCalendarApiKey: 'AIzaSyD5XbOTa2BpNB-JsxpjZazI_F83ud_oz3M',
+          events: 'en5uj53ua739idt0m8lrl227m8@group.calendar.google.com',
+          eventClick: function(event) {
+            // opens events in a popup window
+            window.open(event.url, 'gcalevent', 'width=700,height=600');
+            return false;
+          },
+          firstDay: 0,
+          header: {
+            left: 'title',
+            center: '',
+            right: 'today prev,next'
+          },
+          fixedWeekCount: false,
+          aspectRatio: 1.9
+        });
+      });
