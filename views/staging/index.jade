@@ -1,0 +1,130 @@
+doctype html
+html
+
+  head
+    title BASES
+    include headerFiles.jade
+
+  body
+    include navBar.jade
+    div.home-cover
+      div#main-banner.banner Business Association of Stanford Entrepreneurial Students
+        hr.line-banner
+        div.banner-motto Empowering the next generation of Stanford student innovators and entrepreneurs
+    div#home.infoSection.fullscreen
+    div#about.infoSection.bg1
+      div.infoSection-header
+        div.infoSection-title - About -
+      div.arrow-down
+      div.infoSection-content
+        div.container
+          div.infoSection-description-about The Business Association of Stanford Entrepreneurial Students (BASES) is at the heart of student entrepreneurship at Stanford University. As one of the premiere student-run entrepreneurship organizations in the world, BASES promotes entrepreneurship education at Stanford University in order to empower the next generation of entrepreneurs. We work with exceptional students, prominent professors, and thought leaders to unite the worlds of innovation, academia and industry. Our programs include the BASES $100k Startup Challenge, Entrepreneurial Thought Leaders' Seminar, Startup Career Fair, Women in Entrepreneurship Summit, and Social Impact Week.
+    div#programs.infoSection.bg2
+      div.infoSection-header
+        div.infoSection-title - Programs -
+      div.arrow-down
+      div.infoSection-content
+        div.container
+          div.landing-programs-blurb
+            | BASES programs fall under three main categories - Inspire, Create, and Launch. We are the main vehicle for student-led entrepreneurship programming on Stanford’s campus, with the goal of bringing students from ideas to implementation to the launch of a startup. Through events with thought leaders and industry partners, we hope to inspire any student, with or without previous experience, to gain the skills to become an entrepreneur.
+          div.landing-programs-list
+            h1 Inspire
+            hr.accent
+            div.text
+              <a class="program-name" href='/programs/connects'>Connects</a>
+              div.subprogram-title Entrepreneurial Thought Leader (ETL) Lecture Series
+              div.subprogram-title BASES Bus
+              div.subprogram-title Adventures
+              div.subprogram-title Lessons in Life
+              <a class="program-name" href='/programs/externalRelations'>External Relations</a>
+              div.subprogram-title BASES Startup Career Fair
+              div.subprogram-title Startup Lunches
+              div.subprogram-title VC-Startup Mixer
+              <a class="program-name" href='/programs/socImpact'>Social Impact</a>
+              div.subprogram-title Social Impact Kickoff Panel
+              div.subprogram-title Social E-mmersion Course
+              div.subprogram-title Tackling Today’s Troubles
+              div.subprogram-title Social Impact Fair (Haas Fair)
+              div.subprogram-title Social Impact Case Competition
+              <a class="program-name" href='/programs/cnect'>CNECT</a>
+              div.subprogram-title CNECT Platform
+            h1 Create
+            hr.accent
+            div.text
+              <a class="program-name" href='/programs/createspace'>CreateSpace</a>
+              div.subprogram-title Hacking Hours
+              div.subprogram-title Startup Collab
+              div.subprogram-title Coding Bootcamp
+              div.subprogram-title GoodHacks
+              div.subprogram-title HackOverflow
+              div.subprogram-title BlackOverflow
+              div.subprogram-title PuzzleHunt
+            h1 Launch
+            hr.accent
+            div.text
+              <a class="program-name" href='/programs/challenge'>BASES Challenge</a>
+              p BASES Challenge is Stanford’s oldest and most competitive annual entrepreneurship competition. Students and alumni enter their business or social venture ideas to compete for $100,000 in prize money and developmental opportunities. The application process begins with an electronic written application and culminates in two rounds of live judging.
+
+    script(src="/libraries/jquery-1.10.2.min.js")
+    script.
+      $(document).ready(function() {
+        $("#challenge").click(function(){
+          document.location.href='/programs/challenge';
+        });
+        $("#etl").click(function(){
+          document.location.href='/programs/etl';
+        });
+        $("#hackspace").click(function(){
+          document.location.href='/programs/hackspace';
+        });
+        $("#profDev").click(function(){
+          document.location.href='/programs/profDev';
+        });
+        $("#freshmanBat").click(function(){
+          document.location.href='/programs/freshmanBat';
+        });
+        $("#careerFairs").click(function(){
+          document.location.href='/programs/careerFairs';
+        });
+        $("#startupLunch").click(function(){
+          document.location.href='/programs/startupLunch';
+        });
+        $("#lessonsInLife").click(function(){
+          document.location.href='/programs/lessonsInLife';
+        });
+        $("#eguide").click(function(){
+          document.location.href='/eguide';
+        });
+        $("#alumni").click(function(){
+          document.location.href='/about/alumni';
+        });
+        $("#pastWinners").click(function(){
+          document.location.href='/history/pastWinners';
+        });
+        $("#eBootCamp").click(function(){
+          document.location.href='/history/eBootCamp';
+        });
+        $("#friends").click(function(){
+          document.location.href='/getInvolved/friends';
+        });
+        $("#digest").click(function(){
+          document.location.href='https://docs.google.com/forms/d/1pK0STlCMcED6SJQO9RkunXrKF4Ui1_IHPXFCydXCcRc/viewform';
+        });
+        $("#events").click(function(){
+          document.location.href='/media/events';
+        });
+        $("#inTheNews").click(function(){
+          document.location.href='/media/inTheNews';
+        });
+        $("#brandingGuidelines").click(function(){
+          document.location.href='/media/brandingGuidelines';
+        });
+        $("#sponsors").click(function(){
+          document.location.href='/sponsors';
+        });
+        $("#boardOfAdvisors").click(function(){
+          document.location.href='/about/boardOfAdvisors';
+        });
+      });
+
+    include footerFiles.jade

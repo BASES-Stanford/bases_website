@@ -139,9 +139,9 @@ exports.alumni = function (req, res) {
 STAGING
 **********************************************************/
 
-// exports.stagingindex = function(req, res) {
-// 	res.render('staging/index');
-// };
+exports.stagingindex = function(req, res) {
+	res.render('staging/index');
+};
 
 // exports.stagingtest = function(req, res) {
 // 	res.render('staging/test');
@@ -306,9 +306,9 @@ STAGING
 // 	res.render('staging/about/index');
 // };
 
-// exports.stagingteam = function(req, res) {
-// 	res.render('staging/about/team');
-// };
+exports.stagingteam = function(req, res) {
+	res.render('staging/about/team');
+};
 
 // exports.stagingboardOfAdvisors = function (req, res) {
 // 	res.render('staging/about/boardOfAdvisors');

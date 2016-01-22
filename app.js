@@ -12,8 +12,8 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
-  // app.set('port', 3000);
-  app.set('port', process.env.PORT || 80);
+  app.set('port', 3000);
+  // app.set('port', process.env.PORT || 80);
   app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -81,7 +81,7 @@ app.get('/about/alumni', routes.alumni);
 /*************************************
 BEGIN STAGING
 *************************************/
-// app.get('/staging/', routes.stagingindex);
+app.get('/staging/', routes.stagingindex);
 // // app.get('/staging/test', routes.stagingtest);
 
 // //Programs
@@ -142,7 +142,7 @@ BEGIN STAGING
 
 // //About
 // app.get('/staging/about', routes.stagingabout);
-// app.get('/staging/about/team', routes.stagingteam);
+app.get('/staging/about/team', routes.stagingteam);
 // app.get('/staging/about/boardOfAdvisors', routes.stagingboardOfAdvisors);
 // app.get('/staging/about/alumni', routes.stagingalumni);
 /*************************************
