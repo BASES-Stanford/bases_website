@@ -129,7 +129,7 @@ app.get('/staging/', routes.stagingindex);
 // app.get('/staging/internal', routes.staginginternal);
 
 // //Sponsors
-// app.get('/staging/sponsors', routes.stagingsponsors);
+app.get('/staging/sponsors', routes.stagingsponsors);
 
 // //E-Guide
 // app.get('/staging/eGuide', routes.stagingeGuide);
@@ -142,7 +142,7 @@ app.get('/staging/', routes.stagingindex);
 
 // //About
 // app.get('/staging/about', routes.stagingabout);
-app.get('/staging/about/team', routes.stagingteam);
+// app.get('/staging/about/team', routes.stagingteam);
 // app.get('/staging/about/boardOfAdvisors', routes.stagingboardOfAdvisors);
 // app.get('/staging/about/alumni', routes.stagingalumni);
 /*************************************

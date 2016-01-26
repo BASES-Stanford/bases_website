@@ -73,6 +73,18 @@
   top: 55px;
 }
 
+#sap img {
+  width: 150px;
+}
+
+#lyft img {
+  width: 120px;
+}
+
+#kpcb img {
+  width: 120px;
+}
+
 #svb img {
   width: 120px;
 }
