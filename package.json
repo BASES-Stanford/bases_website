@@ -1,6 +1,6 @@
 {
   "name": "bases-website",
-  "version": "0.0.1",
+  "version": "0.1",
   "private": true,
   "scripts": {
     "start": "node app"
@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.0.5",
     "jade": "*",
-    "myapp": "*"
+    "myapp": "*",
+    "node-sass": "*"
   }
 }

@@ -9,11 +9,17 @@ var express = require('express')
   , path = require('path'),
   rootPath  = path.normalize(__dirname);
 
+var sass = require('node-sass');
+sass.render({
+  file: scss_filename,
+  [, options..]
+}, function(err, result) { /*...*/ });
+
 var app = express();
 
 app.configure(function(){
-  // app.set('port', 3000);
-  app.set('port', process.env.PORT || 80);
+  app.set('port', 3000);
+  // app.set('port', process.env.PORT || 80);
   app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
