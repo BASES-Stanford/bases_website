@@ -1,167 +1,105 @@
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var debug = require('debug')('bases_website:server');
+var http = require('http');
 
-/**
- * Module dependencies.
- */
-
-var express = require('express')
-  , routes = require('./routes')
-  , http = require('http')
-  , path = require('path'),
-  rootPath  = path.normalize(__dirname);
-
-// var sass = require('node-sass');
-// sass.render({
-//   file: scss_filename,
-//   [, options..]
-// }, function(err, result) { /*...*/ });
+var routes = require('./routes/index');
+var staging = require('./routes/staging');
 
 var app = express();
 
-app.configure(function(){
-  // app.set('port', 3000);
-  app.set('port', process.env.PORT || 80);
-  app.use(express.favicon(path.join(__dirname, '/public/favicon.ico')));
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.use(express.favicon());
-  app.use(express.logger('dev'));
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.locals.pretty = true;
+
+app.set('port', process.env.PORT || 3000);
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(require('node-sass-middleware')({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  indentedSyntax: true,
+  sourceMap: true
+}));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', routes);
+app.use('/staging', staging);
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
 
-app.configure('development', function(){
-  app.use(express.errorHandler());
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
 });
 
-app.get('/', routes.index);
+/* Create HTTP server. */
+var server = http.createServer(app);
+server.listen(app.get('port'));
+server.on('error', onError);
+server.on('listening', onListening);
 
-//Programs
-app.get('/programs', routes.programs);
-app.get('/programs/connects', routes.connects);
-app.get('/programs/externalRelations', routes.externalRelations);
-app.get('/programs/socImpact', routes.socImpact);
-app.get('/programs/cnect', routes.cnect);
-app.get('/programs/createspace', routes.createspace);
-app.get('/programs/challenge', routes.challenge);
-app.get('/programs/freshmanBat', routes.freshmanBat);
-// app.get('/programs/careerFairs', routes.careerFairs);
-// app.get('/programs/startupLunch', routes.startupLunch);
-// app.get('/programs/lessonsInLife', routes.lessonsInLife);
+function onError(error) {
+  if (error.syscall !== 'listen') throw error;
 
-//Events
-app.get('/events', routes.events);
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
 
-//Get Involved
-app.get('/getInvolved', routes.getInvolved);
-app.get('/getInvolved/friends', routes.friends);
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
 
-//Media
-// app.get('/media', routes.index);
-// app.get('/media/events', routes.mediaevents);
-// app.get('/media/inTheNews', routes.inTheNews);
-// app.get('/media/brandingGuideLines', routes.brandingGuideLines);
-// app.get('/e-bootcamp', routes.eBootCamp);
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+  console.log('Listening on ' + bind);
+}
 
-//Blog
-// app.get('/blog', routes.blog);
-
-//Internal
-//No pages here, just direct link
-app.get('/internal', routes.internal);
-
-//Sponsors
-app.get('/sponsors', routes.sponsors);
-
-//About
-app.get('/about', routes.about);
-app.get('/about/team', routes.team);
-app.get('/about/boardOfAdvisors', routes.boardOfAdvisors);
-app.get('/about/alumni', routes.alumni);
-
-
-
-
-
-/*************************************
-BEGIN STAGING
-*************************************/
-app.get('/staging/', routes.stagingindex);
-// // app.get('/staging/test', routes.stagingtest);
-
-// //Programs
-// app.get('/staging/programs', routes.stagingprograms);
-// app.get('/staging/programs/connects', routes.stagingconnects);
-// app.get('/staging/programs/externalRelations', routes.stagingexternalRelations);
-// app.get('/staging/programs/socImpact', routes.stagingsocImpact);
-// app.get('/staging/programs/cnect', routes.stagingcnect);
-// app.get('/staging/programs/createspace', routes.stagingcreatespace);
-// app.get('/staging/programs/challenge', routes.stagingchallenge);
-// app.get('/staging/programs/eChallenge', routes.stagingeChallenge);
-// app.get('/staging/programs/socialEChallenge', routes.stagingsocialEChallenge);
-// app.get('/staging/programs/productShowCase', routes.stagingproductShowCase);
-// app.get('/staging/programs/etl', routes.stagingetl);
-// app.get('/staging/programs/hackspace', routes.staginghackspace);
-// app.get('/staging/programs/hackspace/workshops', hackspace.workshops);
-// app.get('/staging/programs/hackspace/workshops/1', hackspace.websiteWorkshop);
-// app.get('/staging/programs/freshmanBat', routes.stagingfreshmanBat);
-// app.get('/staging/programs/WIE', routes.stagingWIE);
-// app.get('/staging/programs/careerFairs', routes.stagingcareerFairs);
-// app.get('/staging/programs/startupLunch', routes.stagingstartupLunch);
-// app.get('/staging/programs/lessonsInLife', routes.staginglessonsInLife);
-
-// //Events
-// app.get('/staging/events', routes.stagingevents);
-
-// //Get Involved
-// app.get('/staging/getInvolved', routes.staginggetInvolved);
-// app.get('/staging/getInvolved/digest', routes.stagingdigest);
-// app.get('/staging/getInvolved/registration', routes.stagingregistration);
-// app.get('/staging/getInvolved/friends', routes.stagingfriends);
-
-// //Media
-// app.get('/staging/media', routes.stagingindex);
-// app.get('/staging/media/events', routes.stagingmediaevents);
-// app.get('/staging/media/inTheNews', routes.staginginTheNews);
-// app.get('/staging/media/brandingGuideLines', routes.stagingbrandingGuideLines);
-// app.get('/staging/e-bootcamp', routes.stagingeBootCamp);
-
-// //Blog
-// app.get('/staging/blog', routes.stagingblog);
-
-// //Internal
-// //No pages here, just direct link
-// app.get('/staging/internal', routes.staginginternal);
-
-// //Sponsors
-app.get('/staging/sponsors', routes.stagingsponsors);
-// 
-// //E-Guide
-// app.get('/staging/eGuide', routes.stagingeGuide);
-// app.get('/staging/eGuidePrivate', routes.stagingeGuidePrivate);
-// app.get('/staging/eGuideClasses', routes.stagingeGuideClasses);
-// app.get('/staging/eGuideGroups', routes.stagingeGuideGroups);
-// app.get('/staging/eGuideLabs', routes.stagingeGuideLabs);
-// app.get('/staging/eGuideCampusResources', routes.stagingeGuideCampusResources);
-// app.get('/staging/eGuideExternalResources', routes.stagingeGuideExternalResources);
-
-// //About
-// app.get('/staging/about', routes.stagingabout);
-// app.get('/staging/about/team', routes.stagingteam);
-// app.get('/staging/about/boardOfAdvisors', routes.stagingboardOfAdvisors);
-// app.get('/staging/about/alumni', routes.stagingalumni);
-/*************************************
-END STAGING
-*************************************/
-
-
-
-
-
-// In case of bad routing
-//app.get('/*', routes.index);
-
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
-});
+module.exports = app;
