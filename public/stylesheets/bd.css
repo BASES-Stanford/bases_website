@@ -37,7 +37,7 @@
 
 .goldTile {
   height: 140px;
-  width: 300px;
+  width: 298px;
   display: inline-block;
   margin: 6px;
   padding: 10px;
@@ -50,6 +50,14 @@
   transform: translateY(-50%);
   display: block;
   margin: auto;
+}
+
+.silverTile {
+  height: 100px;
+  width: 223px;
+  display: inline-block;
+  margin: 4px;
+  padding: 10px;
 }
 
 .silverTile img {
@@ -87,14 +95,6 @@
 
 #svb img {
   width: 120px;
-}
-
-.silverTile {
-  height: 100px;
-  width: 225px;
-  display: inline-block;
-  margin: 4px;
-  padding: 10px;
 }
 
 #db {
