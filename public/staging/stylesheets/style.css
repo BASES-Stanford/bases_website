@@ -54,4 +54,72 @@ body {
         transition: all 0.4s ease;
         -webkit-transition: all 0.4s ease; }
 
+.footer {
+  background-color: #222;
+  color: #fff; }
+  .footer .info {
+    margin: 20px; }
+  .footer .social {
+    margin: 20px; }
+    .footer .social a {
+      padding: 0 5px;
+      margin: 0 10px;
+      display: inline-block;
+      color: #fff; }
+      .footer .social a:hover {
+        color: #d02b2d; }
+
+.section {
+  padding: 30px 20px; }
+
+.bg-wrapper {
+  width: 100%; }
+
+.home {
+  padding: 150px 200px;
+  height: 500px;
+  height: calc(100vh - 100px);
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/staging/images/basesCover.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+  .home .title {
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .home .description {
+    font-size: 14px;
+    line-height: 2em; }
+
+#category-bg {
+  background-color: #eee; }
+
+.category .title {
+  font-size: 32px;
+  letter-spacing: -1px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  display: inline-block; }
+
+.category .subtitle {
+  font-size: 20px;
+  display: inline-block; }
+
+#inspire .title {
+  color: #b32f3f; }
+
+#create .title {
+  color: #1272b3; }
+
+#launch .title {
+  color: #117979; }
+
+#contact-bg {
+  background-color: #ddd; }
+
+.contact .title {
+  font-size: 32px;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */

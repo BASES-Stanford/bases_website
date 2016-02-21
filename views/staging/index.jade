@@ -1,1 +1,21 @@
 extends layout
+
+block content
+  div.home.text-center
+    div.title.col-md-12 Empowering the next generation of Stanford student innovators and entrepreneurs
+    div.description.col-md-12
+      | The Business Association of Stanford Entrepreneurial Students (BASES) is at the heart of student entrepreneurship at Stanford University. As one of the premiere student-run entrepreneurship organizations in the world, BASES promotes entrepreneurship education at Stanford University in order to empower the next generation of entrepreneurs. We work with exceptional students, prominent professors, and thought leaders to unite the worlds of innovation, academia and industry.
+  div#category-bg.bg-wrapper
+    div.container
+      for category in categories
+        div(id="#{category.id}" class="category section")
+          div.title #{category.title}
+          div.subtitle #{category.subtitle}
+          div.description #{category.description}
+  div#contact-bg.bg-wrapper
+    div.container
+      div.contact.text-center.section
+        div.title Contact
+        div.col-md-4 Companies
+        div.col-md-4 Students
+        div.col-md-4 General Community Members

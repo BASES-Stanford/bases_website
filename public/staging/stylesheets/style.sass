@@ -59,3 +59,77 @@ $nav-text-color: #333;
               -webkit-transform: scaleX(0);
               transition: all 0.4s ease;
               -webkit-transition: all 0.4s ease;
+
+$footer-text-color: #fff;
+.footer
+  background-color: #222;
+  color: $footer-text-color;
+  .info
+    margin: 20px;
+  .social
+    margin: 20px;
+    a
+      padding: 0 5px;
+      margin: 0 10px;
+      display: inline-block;
+      color: $footer-text-color;
+      &:hover
+        color: $bases-red;
+
+.section
+  padding: 30px 20px;
+
+.bg-wrapper
+  width: 100%;
+
+
+$home-bg-darkness: 0.4;
+.home
+  padding: 150px 200px;
+  height: 500px;
+  height: calc(100vh - 100px);
+  color: #fff;
+  background: linear-gradient(rgba(0,0,0,$home-bg-darkness),rgba(0,0,0,$home-bg-darkness)), url(/staging/images/basesCover.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  .title
+    font-size: 28px;
+    margin-bottom: 20px;
+    // font-weight: bold;
+  .description
+    font-size: 14px;
+    line-height: 2em;
+
+#category-bg
+  background-color: #eee;
+.category
+  .title
+    font-size: 32px;
+    letter-spacing: -1px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+  .subtitle
+    font-size: 20px;
+    display: inline-block;
+
+#inspire
+  .title
+    color: #b32f3f;
+
+#create
+  .title
+    color: #1272b3;
+
+#launch
+  .title
+    color: #117979;
+
+#contact-bg
+  background-color: #ddd;
+.contact
+  .title
+    font-size: 32px;
+    text-transform: uppercase;

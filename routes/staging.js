@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* Index */
 router.get('/', function(req, res, next) {
-  res.render('staging/index');
+  var categories = require("../render_data/categories.json");
+  res.render('staging/index', {
+    categories: categories
+  });
 });
 
 /* Programs */

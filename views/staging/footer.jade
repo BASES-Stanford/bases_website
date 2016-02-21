@@ -1,6 +1,10 @@
-div.footer.text-center
-
-
+div.footer.section.text-center
+  div.info &copy; #[span] Business Association of Stanford Entrepreneurial Students | Shivaal Roy
+  div.social
+    a(href="https://www.facebook.com/BASESfb" target="_blank")
+      i(class="fa fa-facebook fa-2x")
+    a(href="https://twitter.com/bases" target="_blank")
+      i(class="fa fa-twitter fa-2x")
 script.
   var d = new Date();
-  $(".footer").html("&copy; " + d.getFullYear() + " Business Association of Stanford Entrepreneurial Students | Shivaal Roy");
+  $(".footer .info span").text(d.getFullYear());

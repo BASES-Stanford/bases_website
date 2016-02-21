@@ -1,0 +1,20 @@
+[
+  {
+    "id": "inspire",
+    "title": "Inspire",
+    "subtitle": "Exposure to a vast network and engagement with community",
+    "description": "Every inspiration comes from a spark. BASES hosts a broad range of programs like rock, paper, and scissors, aimed to give our members exposure to a vast network of leaders in a variety of industries and engagement with a tight-knit community."
+  },
+  {
+    "id": "create",
+    "title": "Create",
+    "subtitle": "Opportunities with teams to offer students time focused building",
+    "description": "Ideas get lost without opportunities to act upon them, so BASES provides these opportunities with teams to offer students uninterrupted time to focus on building, aided by workshops on venture formation and speaker sessions. These opportunities include rock, paper, and scissors."
+  },
+  {
+    "id": "launch",
+    "title": "Launch",
+    "subtitle": "Connecting students with the best of the Silicon Valley",
+    "description": "When it's time to launch, you want to make an entrance that's as impressive as your company. BASES Challenge is your chance to present your pitch in front of an experienced panel of judges for a share of 100K in prize money and mentorship opportunities."
+  }
+]
