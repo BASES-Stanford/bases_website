@@ -79,7 +79,7 @@ router.get('/sponsors', function(req, res, next) {
 });
 
 /* About */
-router.get('/about/index', function(req, res, next) {
+router.get('/about', function(req, res, next) {
 	res.render('about/index');
 });
 
