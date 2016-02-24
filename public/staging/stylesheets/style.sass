@@ -82,12 +82,19 @@ $footer-text-color: #fff;
 .bg-wrapper
   width: 100%;
 
+.text-vertical-center
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
 
 $home-bg-darkness: 0.4;
-.home
+.header
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
   padding: 150px 200px;
-  height: 500px;
-  height: calc(100vh - 100px);
   color: #fff;
   background: linear-gradient(rgba(0,0,0,$home-bg-darkness),rgba(0,0,0,$home-bg-darkness)), url(/staging/images/basesCover.jpg) no-repeat center center;
   background-size: cover;
