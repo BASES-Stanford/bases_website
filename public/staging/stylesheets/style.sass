@@ -60,11 +60,11 @@ $nav-text-color: #333;
               transition: all 0.4s ease;
               -webkit-transition: all 0.4s ease;
 
-$footer-text-color: #fff;
 .footer
   background-color: #222;
-  color: $footer-text-color;
+  color: #fff;
   .info
+    font-weight: lighter;
     margin: 20px;
   .social
     margin: 20px;
@@ -72,9 +72,12 @@ $footer-text-color: #fff;
       padding: 0 5px;
       margin: 0 10px;
       display: inline-block;
-      color: $footer-text-color;
+      color: #fff;
       &:hover
         color: $bases-red;
+
+.container
+  max-width: 970px;
 
 .section
   padding: 30px 20px;
@@ -92,7 +95,7 @@ $footer-text-color: #fff;
   display: table-cell;
 
 
-$home-bg-darkness: 0.4;
+$home-bg-darkness: 0.5;
 .header
   display: table;
   position: relative;
@@ -100,7 +103,7 @@ $home-bg-darkness: 0.4;
   height: 100%;
   // padding: 150px 200px;
   color: #fff;
-  background: linear-gradient(rgba(0,0,0,$home-bg-darkness),rgba(0,0,0,$home-bg-darkness)), url(/staging/images/basesCover.jpg) no-repeat center center;
+  background: linear-gradient(rgba(30,30,30,$home-bg-darkness),rgba(30,30,30,$home-bg-darkness)), url(/staging/images/basesCover.jpg) no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -110,33 +113,103 @@ $home-bg-darkness: 0.4;
     margin-bottom: 20px;
     // font-weight: bold;
   .description
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2em;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+  .btn-transparent
+    margin: 30px 0 30px;
+
+.btn-transparent
+  // font-family: CenturyGothic;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  background: transparent;
+  padding: 5px 30px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  margin: 0;
+  &:hover
+    color: #fff;
+    background: rgba(255,255,255,0.2);
 
 #category-bg
-  background-color: #eee;
+  background-color: #fff;
+
 .category
   .title
     font-size: 32px;
-    letter-spacing: -1px;
-    margin-right: 20px;
+    letter-spacing: 2px;
+    margin-right: 50px;
     text-transform: uppercase;
     display: inline-block;
   .subtitle
-    font-size: 20px;
+    // font-family: CenturyGothic;
+    font-size: 16px;
+    color: #283E6C;
+    font-weight: lighter;
+    letter-spacing: 1px;
     display: inline-block;
+  .container-fluid
+    margin-top: 30px;
+    padding: 0;
+    .col-md-9
+      padding: 0;
+    .description
+      letter-spacing: 1px;
+      font-weight: lighter;
+      color: #000;
+      line-height: 2em;
+      .learn-container
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 0 60px;
+        height: 80px;
+        border-left: solid 3px #fff;
+        .btn-transparent
+          font-size: 14px;
+    .col-md-3
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      img
+        width: 180px;
+        height: 180px;
+        border-radius: 100px;
 
+$inspire-secondary: #4F2152;
 #inspire
   .title
     color: #b32f3f;
+  .learn-container
+    border-color: $inspire-secondary;
+    .btn-transparent
+      color: $inspire-secondary;
+      border-color: $inspire-secondary;
 
+$create-secondary: #EFC301;
 #create
   .title
     color: #1272b3;
+  .learn-container
+    border-color: $create-secondary;
+    .btn-transparent
+      color: $create-secondary;
+      border-color: $create-secondary;
 
+$launch-secondary: #03568C;
 #launch
   .title
     color: #117979;
+  .learn-container
+    border-color: $launch-secondary;
+    .btn-transparent
+      color: $launch-secondary;
+      border-color: $launch-secondary;
 
 #contact-bg
   background-color: #ddd;
