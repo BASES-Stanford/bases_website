@@ -10,9 +10,17 @@ html, body
 body
   padding-top: 100px;
 
+$standard-link-color: #B52D3C;
+
 $bases-red: #d02b2d;
 $logo-height: 50px;
 $nav-text-color: #333;
+a
+  color: $bases-red;
+  &:hover
+    // text-decoration: none;
+    color: $bases-red;
+
 .navbar
   padding: 10px 20px;
   border-radius: 0;
@@ -95,7 +103,6 @@ $nav-text-color: #333;
   display: table-cell;
 
 
-$home-bg-darkness: 0.5;
 .header
   display: table;
   position: relative;
@@ -103,7 +110,7 @@ $home-bg-darkness: 0.5;
   height: 100%;
   // padding: 150px 200px;
   color: #fff;
-  background: linear-gradient(rgba(30,30,30,$home-bg-darkness),rgba(30,30,30,$home-bg-darkness)), url(/staging/images/basesCover.jpg) no-repeat center center;
+  background: linear-gradient(rgba(57,75,89,0.57),rgba(57,30,30,0.57)), url(/staging/images/basesCover.jpg) no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -211,9 +218,97 @@ $launch-secondary: #03568C;
       color: $launch-secondary;
       border-color: $launch-secondary;
 
+.slideshow
+  background: black;
+  color: #fff;
+  ul.bjqs-controls .bjqs-prev a
+    background: url("../images/icon_arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center right;
+    top: 40%;
+    height: 6em;
+    width: 4em;
+    left: 2em !important;
+    text-indent: -100000px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  ul.bjqs-controls .bjqs-next a
+    background: url("../images/icon_arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center right;
+    top: 40%;
+    height: 6em;
+    width: 4em;
+    right: 2em !important;
+    text-indent: -100000px;
+  li
+    background-position: center center;
+    div
+      display: table;
+      height: 100vh;
+      width: 100%;
+      div
+        display: table-cell;
+        vertical-align: middle;
+
+// #speakers li#ng {
+//   background: url("../images/speaker_andrew_ng.jpg") no-repeat;
+//   background-size: cover;
+//   background-position: center center; }
+
+// #speakers li#musk {
+//   background: url("../images/speaker_elon_musk.jpg") no-repeat;
+//   background-size: cover;
+//   background-position: center center; }
+
+// #speakers li#thiel {
+//   background: url("../images/speaker_peter_thiel.jpg") no-repeat;
+//   background-size: cover;
+//   background-position: center center; }
+
+#speakers li .content
+  font: 2.5em "Freight", serif;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 80%;
+  padding-top: 100px;
+  position: relative;
+  &:before
+    background: url("../images/icon_quote.png") no-repeat;
+    background-size: contain;
+    content: '';
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 225px;
+  .author, .title
+    display: block;
+    font: 0.4em "Gotham", Georgia, Times, serif;
+    text-align: right;
+  .author
+    font-weight: 700;
+    margin: 3em 0 0.5em;
+    &:before
+      content: '- ';
+
 #contact-bg
-  background-color: #ddd;
+  background-color: #a9a8aa;
 .contact
   .title
     font-size: 32px;
     text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+  .heading
+    font-weight: lighter;
+    color: #fff;
+    font-size: 18px;
+  .info
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #eee;

@@ -10,6 +10,11 @@ html, body {
 body {
   padding-top: 100px; }
 
+a {
+  color: #d02b2d; }
+  a:hover {
+    color: #d02b2d; }
+
 .navbar {
   padding: 10px 20px;
   border-radius: 0;
@@ -94,7 +99,7 @@ body {
   width: 100%;
   height: 100%;
   color: #fff;
-  background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5)), url(/staging/images/basesCover.jpg) no-repeat center center;
+  background: linear-gradient(rgba(57, 75, 89, 0.57), rgba(57, 30, 30, 0.57)), url(/staging/images/basesCover.jpg) no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -197,11 +202,86 @@ body {
     color: #03568C;
     border-color: #03568C; }
 
+.slideshow {
+  background: black;
+  color: #fff; }
+  .slideshow ul.bjqs-controls .bjqs-prev a {
+    background: url("../images/icon_arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center right;
+    top: 40%;
+    height: 6em;
+    width: 4em;
+    left: 2em !important;
+    text-indent: -100000px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .slideshow ul.bjqs-controls .bjqs-next a {
+    background: url("../images/icon_arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center right;
+    top: 40%;
+    height: 6em;
+    width: 4em;
+    right: 2em !important;
+    text-indent: -100000px; }
+  .slideshow li {
+    background-position: center center; }
+    .slideshow li div {
+      display: table;
+      height: 100vh;
+      width: 100%; }
+      .slideshow li div div {
+        display: table-cell;
+        vertical-align: middle; }
+
+#speakers li .content {
+  font: 2.5em "Freight", serif;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 80%;
+  padding-top: 100px;
+  position: relative; }
+  #speakers li .content:before {
+    background: url("../images/icon_quote.png") no-repeat;
+    background-size: contain;
+    content: '';
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 225px; }
+  #speakers li .content .author, #speakers li .content .title {
+    display: block;
+    font: 0.4em "Gotham", Georgia, Times, serif;
+    text-align: right; }
+  #speakers li .content .author {
+    font-weight: 700;
+    margin: 3em 0 0.5em; }
+    #speakers li .content .author:before {
+      content: '- '; }
+
 #contact-bg {
-  background-color: #ddd; }
+  background-color: #a9a8aa; }
 
 .contact .title {
   font-size: 32px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px; }
+
+.contact .heading {
+  font-weight: lighter;
+  color: #fff;
+  font-size: 18px; }
+
+.contact .info {
+  margin-top: 20px;
+  font-weight: lighter;
+  color: #eee; }
 
 /*# sourceMappingURL=style.css.map */

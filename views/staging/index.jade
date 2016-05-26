@@ -1,5 +1,9 @@
 extends layout
 
+block scripts
+  script(type='text/javascript' src='/staging/javascripts/bjqs-1.3.min.js')
+  script(type='text/javascript' src='/staging/javascripts/slider.js')
+
 block content
   header.header
     div.empty-column
@@ -21,16 +25,37 @@ block content
                 button(id='#{category.id}-learn-btn' class='btn-transparent') Learn more
             div.col-md-3
               img(src='/staging/images/friends.jpg')
-          //- div.description-img-holder.clearfix
-          //-   img(src='/staging/images/friends.jpg')
-          //-   div.description #{category.description}
-          //-   div.learn-container
-          //-     button(id='#{category.id}-learn-btn' class='btn-transparent') Learn more
+  section#speakers.slideshow.full-height
+    ul.bjqs
+      li#thiel.speaker
+        div
+          div
+            div.content Brilliant thinking is rare, but courage is in even shorter supply than genius.
+              div.author Peter Thiel
+              div.title Founder, Paypal
+      li#thiel.speaker
+        div
+          div
+            div.content Brilliant thinking is rare, but courage is in even shorter supply than genius.
+              div.author Peter Thiel
+              div.title Founder, Paypal
+      li#thiel.speaker
+        div
+          div
+            div.content Brilliant thinking is rare, but courage is in even shorter supply than genius.
+              div.author Peter Thiel
+              div.title Founder, Paypal
   div#contact-bg.bg-wrapper
     div.container
       div.contact.text-center.section
         div.title Contact
         div.container-fluid
-          div.col-md-4 Companies
-          div.col-md-4 Students
-          div.col-md-4 General Community Members
+          div.col-md-4
+            div.heading Companies
+            div.info #[a(href='#') Learn more] about BASES Sponsorship
+          div.col-md-4
+            div.heading Students
+            div.info Email Christine Quan at #[a(href='mailto:christine.quan@stanford.edu') christine.quan@stanford.edu]
+          div.col-md-4
+            div.heading General Community Members
+            div.info #[a(href='') Subscribe] to the weekly digest
