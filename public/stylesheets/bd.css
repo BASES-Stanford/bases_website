@@ -7,16 +7,17 @@
 }
 
 .tile {
-  -webkit-transition: 0.25s;
-  transition: 0.5s;
   background-color: transparent;
-  /*box-shadow: 1px 1px 1px #bbb;*/
-  display: block;
 }
 
-.tile:hover {
-  background: #e0eeee;
+a.tile {
+  -webkit-transition: 0.25s;
+  transition: 0.5s;
   cursor: pointer;
+}
+
+a.tile:hover {
+  background: #e0eeee;
 }
 
 .platinumTile {
